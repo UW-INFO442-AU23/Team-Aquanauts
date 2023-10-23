@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom'
 
-export function EducationPage(props) {
+export default function EducationPage(props) {
   return (
     <div>
       <header>

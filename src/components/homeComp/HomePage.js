@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom'
 
-export function HomePage(props) {
+export default function HomePage(props) {
   return (
     <div>
       <header>

@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom'
 
-export function DonationPage(props) {
+export default function DonationPage(props) {
   return (
     <div>
       <header>
