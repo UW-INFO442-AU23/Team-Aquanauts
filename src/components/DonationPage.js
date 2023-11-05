@@ -9,8 +9,8 @@ export function DonationPage(props) {
       </header>
       <main>
         <button type="button" className="btn btn-info btn-lg"><NavLink to='/home'>Home page</NavLink></button>
-        <button type="button" className="btn btn-info btn-lg"><NavLink to='/resources'>Resource page</NavLink></button>
-        <button type="button" className="btn btn-info btn-lg"><NavLink to='/education'>Education page</NavLink></button>
+        <button type="button" className="btn btn-info btn-lg"><NavLink to='/resources'>Resources </NavLink></button>
+        <button type="button" className="btn btn-info btn-lg"><NavLink to='/education'>Education </NavLink></button>
       </main>
     </div>
   )

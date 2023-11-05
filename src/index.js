@@ -24,7 +24,7 @@ const app = initializeApp(firebaseConfig);
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+root.render( 
   <React.StrictMode>
     <BrowserRouter>
       <App />
