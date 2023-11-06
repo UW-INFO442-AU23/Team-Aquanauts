@@ -8,10 +8,10 @@ import EducationPage from './educationComp/EducationPage.js';
 export function App(props) {
   return (
     <Routes>
-      <Route path="home" element={<HomePage/>}/>
-      <Route path="resources" element={<ResourcePage/>}/>
-      <Route path="donations" element={<DonationPage/>}/>
-      <Route path="education" element={<EducationPage/>}/>
+      <Route path="home" element={<HomePage />} />
+      <Route path="resources" element={<ResourcePage />} />
+      <Route path="donations" element={<DonationPage />} />
+      <Route path="education" element={<EducationPage />} />
       <Route path='*' element={<Navigate to='/home' />} />
       </Routes>
   )
