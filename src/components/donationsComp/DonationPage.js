@@ -1,9 +1,10 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom'
+import '../../index.css'
 
 export default function DonationPage(props) {
   return (
-    <div>
+    <div className="background-page">
       <header>
         <h1>Donation Page</h1>
       </header>

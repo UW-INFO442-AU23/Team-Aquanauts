@@ -3,3 +3,13 @@
     text-decoration: none;
     font-weight: bold;
 }
+
+.background-onboard {
+    background-image: linear-gradient(to bottom right, rgba(131,210,215), rgba(237,253,245));
+    height: 100vh;
+}
+
+.background-page {
+    background-image: linear-gradient(to bottom right, rgba(194,237,239), rgba(238,249,250));
+    height: 100vh;
+}
