@@ -1,10 +1,11 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 import SearchBar from '../SearchBar.js';
+import '../../index.css'
 
 export default function ResourcePage(props) {
   return (
-    <div>
+    <div className="background-page">
       <header>
         <h1>Resource Page</h1>
         <nav>

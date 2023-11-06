@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom';
 
 export default function HomePage(props) {
   return (
-    <div>
+    <div className="background-onboard">
       <header>
         <h1>Aquanauts Homescreen</h1>
       </header>

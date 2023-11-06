@@ -4,7 +4,7 @@ import SearchBar from '../SearchBar.js';
 
 export default function DonationPage(props) {
   return (
-    <div>
+    <div className="background-page">
       <header>
         <h1>Donation Page</h1>
         <nav>
