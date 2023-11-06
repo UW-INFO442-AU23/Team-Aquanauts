@@ -10,39 +10,56 @@ export default function SearchBar(props) {
   const handleSearch = (event) => {
     let queryString = query.toString();
 
-    //returns true if it is a valid number
-    function isNumeric(value) {
-      return /^-?\d+$/.test(value);
-    }
-
     // checking if query is five or ten characters long
-    if (queryString.length != 5) { // anything other than 5 or ten digits long
-      console.log("query is not the right length")
-    } else { // exactly five or ten digits long
-      console.log("hi");
+    if (queryString.length == 5 || queryString.length == 10) { // it is 5 or 10 characters
+
       //ten digit route
       if (queryString.length == 10) {
-        if (!queryString.includes("-")) {
+        if (queryString[5] != "-") {
           console.log("query not formatted correctly")
         } else {
-          // format it so it is just the numbers without the hyphen. ex. from 12345-6789 to 123456789
+          formatting(queryString.substring(0, 5), queryString.substring(6, queryString.length));
         }
         //if passes here, query is 10 digits long and has a hyphen
+      } else { //five digit route
+        formatting(queryString, null);
       }
+    } else { // not 5 or 10 digits long
+      console.log("query is not the right length");
+    }
+  }
 
-      // checking to make sure query is comprised of only numbers
-      if (!isNumeric(queryString)) { // has something other than letters
-        console.log("query contains characters other than numbers");
-      } else { // query only has numbers
-        // check if last four digits of the nine digit zip codes is not 0000. all other number options are possible
-        if (ZIPCODES.includes(queryString)) {
-          console.log("included in array");
-        } else {
-          console.log("not included in array")
+  //returns true if it is a valid number
+  function isNumeric(value) {
+    return /^-?\d+$/.test(value);
+  }
+
+  function formatting(firstHalf, secondHalf) {
+    if (secondHalf == null) { //five digit route
+      if (isNumeric(firstHalf)) { // just numbers
+        checkZip(firstHalf);
+      } else { //contains something other than numbers
+        console.log("query has characters other than numbers");
+      }
+    } else { //ten digit route
+      if (isNumeric(firstHalf) && isNumeric(secondHalf)) { //both are just numbers
+        if (secondHalf.toString() != "0000") {
+          checkZip(firstHalf);
         }
+      } else { //either has something other than a number
+        console.log("query has characters other than numbers");
       }
     }
   }
+
+  function checkZip(zip) {
+    if (ZIPCODES.includes(zip)) {
+      console.log("zip is in array");
+    } else {
+      console.log("zip is not in array");
+    }
+  }
+
   const ref2 = useRef(null);
 
 
