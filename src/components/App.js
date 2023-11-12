@@ -11,6 +11,7 @@ import HomePage from './homeComp/HomePage.js';
 import ResourcePage from './resourcesComp/ResourcePage.js';
 import DonationPage from './donationsComp/DonationPage.js';
 import EducationPage from './educationComp/EducationPage.js';
+import withSplashScreen from './withSplashScreen';
 import { render } from '@testing-library/react';
 
 class App extends Component {
@@ -31,4 +32,4 @@ class App extends Component {
   
 }
 
-export default App;
+export default withSplashScreen(App);

@@ -7,7 +7,7 @@ export default function HomePage(props) {
   return (
     <div className="background-onboard">
       <header>
-        <h1 className="header">the Aquapod</h1>
+        <h1 className="header">the AquaPod</h1>
       </header>
       <main>
         <h2 className="sub-header">What kind of Aquanaut are you?</h2>

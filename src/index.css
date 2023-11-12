@@ -11,23 +11,23 @@
 }
 
 .background-onboard {
-    background-image: linear-gradient(to bottom right, rgba(131,210,215), rgba(237,253,245));
+    background-image: linear-gradient(to bottom right, rgba(131, 210, 215), rgba(237, 253, 245));
     height: 100vh;
 }
 
 .background-page {
-    background-image: linear-gradient(to bottom right, rgba(194,237,239), rgba(238,249,250));
+    background-image: linear-gradient(to bottom right, rgba(194, 237, 239), rgba(238, 249, 250));
     height: 100vh;
 }
 
 .top-nav {
-    background-image: linear-gradient(to bottom left, rgba(135,211,215), rgba(194,238,239));
+    background-image: linear-gradient(to bottom left, rgba(135, 211, 215), rgba(194, 238, 239));
     justify-content: space-between;
     align-items: center;
 }
 
 .top-nav a, .header, .sub-header {
-    color: rgba(2,67,67);
+    color: rgba(2, 67, 67);
 }
 
 .nav-container {
@@ -44,8 +44,8 @@
 }
 
 .nav-links a:hover {
-    color: rgba(17,124,131);
-    background-color: rgba(213,242,244);
+    color: rgba(17, 124, 131);
+    background-color: rgba(213, 242, 244);
     padding-bottom: 38px;
     padding-top: 15px;
     border-top-left-radius: 10px;
@@ -65,16 +65,16 @@
 }
 
 .button-links .btn {
-    background-color: rgba(29,118,123);
-    color: rgba(231,242,253);
+    background-color: rgba(29, 118, 123);
+    color: rgba(231, 242, 253);
     padding: 15px 20px;
 }
 
 .button-links a {
-    color: rgba(231,242,253);
+    color: rgba(231, 242, 253);
 }
 
 #apply-search {
-    background-color: rgba(29,118,123);
-    color: rgba(231,242,253);
+    background-color: rgba(29, 118, 123);
+    color: rgba(231, 242, 253);
 }

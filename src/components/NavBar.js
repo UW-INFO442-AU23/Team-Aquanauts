@@ -10,7 +10,7 @@ export default function NavBar(props) {
           <div className="top-nav">
             <div className="nav-container">
               <div className="title-bar">
-                <Link to="home"><h1>the Aquapod</h1></Link>
+                <Link to="home"><h1>the AquaPod</h1></Link>
               </div>
               <div className="nav-bar">
                 <div className="nav-links">
