@@ -2,16 +2,16 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import SearchBar from '../SearchBar.js';
 import '../../index.css'
+import NavBar from '../NavBar.js';
 
 export default function ResourcePage(props) {
   return (
     <div className="background-page">
+      <NavBar />
       <header>
         <h1>Resource Page</h1>
         <nav>
-          <button type="button" className="btn btn-info btn-lg"><NavLink to='/home'>Home page</NavLink></button>
-          <button type="button" className="btn btn-info btn-lg"><NavLink to='/donations'>Donation page</NavLink></button>
-          <button type="button" className="btn btn-info btn-lg"><NavLink to='/education'>Education page</NavLink></button>
+          
         </nav>
       </header>
       <main>

@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import {App} from './components/App.js';
-import { BrowserRouter} from 'react-router-dom';
+import App from './components/App';
+import BrowserRouter from 'react-router-dom';
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -25,10 +25,6 @@ const app = initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render( 
-  <React.StrictMode>
-    <BrowserRouter>
       <App />
-    </BrowserRouter>
-  </React.StrictMode>
 );
 
