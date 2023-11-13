@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom'
-import '../../index.css'
+import '../../index.css';
 
 export default function HomePage(props) {
 
@@ -18,7 +18,7 @@ export default function HomePage(props) {
             <Link to='/education' className="btn btn-info btn-lg mb-5 nav-link">Education page</Link>
           </div>
         </div>
-        
+
       </main>
     </div>
   )
