@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 import SearchBar from '../SearchBar.js';
-import Cards from '../Cards.js';
+import { CardList } from '../CardList.js';
 import '../../index.css';
 import NavBar from '../NavBar.js';
 const CARDINFO = [
@@ -20,7 +20,7 @@ export default function ResourcePage(props) {
       </header>
       <main>
         <SearchBar/>
-        <Cards CardInfo={CARDINFO} />
+        <CardList />
       </main>
     </div>
   )
