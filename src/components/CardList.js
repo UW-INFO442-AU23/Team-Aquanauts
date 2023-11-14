@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { CardDetails } from "./CardDetails.js";
 
 export function CardList(props) {
     const cardBox = props.card;
@@ -7,7 +8,7 @@ export function CardList(props) {
     return (
         <div className="card-list">
             <div className="card-container">
-                <Link to="temp" className="card-link">
+                <Link to="/location" className="card-link">
                     <div className="single-card-box">
                         <div className="card-text">
                             <h2 className="card-title">Location</h2>
