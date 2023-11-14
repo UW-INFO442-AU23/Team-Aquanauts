@@ -7,6 +7,15 @@ import NavBar from '../NavBar.js';
 const CARDINFO = [
   {locName: 'loc1', pic: '', }
 ];
+// import json file 
+// import file from "../filteredWaterResources.json" with { type: "json"};
+// console.log(file.filteredWaterResources);
+
+const fs = require('fs');
+const filePath = '../filteredWaterResources.json';
+const jsonData = fs.readFileSync(filePath, 'utf-8');
+const parsedData = JSON.parse(jsonData);
+console.log(parsedData.filteredWaterResources);
 
 export default function ResourcePage(props) {
   return (
@@ -15,11 +24,11 @@ export default function ResourcePage(props) {
       <header>
         <h1>Resource Page</h1>
         <nav>
-
         </nav>
       </header>
       <main>
         <SearchBar/>
+        
         <CardList />
       </main>
     </div>
