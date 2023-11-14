@@ -2,6 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import SearchBar from '../SearchBar.js';
 import NavBar from '../NavBar.js';
+import { CardList } from '../CardList.js';
 
 export default function DonationPage(props) {
   return (
@@ -15,6 +16,7 @@ export default function DonationPage(props) {
       </header>
       <main>
         <SearchBar />
+        <CardList />
       </main>
     </div>
   )
