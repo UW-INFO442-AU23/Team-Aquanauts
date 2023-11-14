@@ -12,11 +12,11 @@ const CARDINFO = [
 // import file from "../filteredWaterResources.json" with { type: "json"};
 // console.log(file.filteredWaterResources);
 
-const fs = require('fs');
-const filePath = '../filteredWaterResources.json';
-const jsonData = fs.readFileSync(filePath, 'utf-8');
-const parsedData = JSON.parse(jsonData);
-console.log(parsedData.filteredWaterResources);
+// const fs = require('fs');
+// const filePath = '../filteredWaterResources.json';
+// const jsonData = fs.readFileSync(filePath, 'utf-8');
+// const parsedData = JSON.parse(jsonData);
+// console.log(parsedData.filteredWaterResources);
 
 export default function ResourcePage(props) {
   return (
@@ -28,10 +28,20 @@ export default function ResourcePage(props) {
         </nav>
       </header>
       <main>
-        <SearchBar/>
-        
-        <CardList />
+        <SearchBar/>    
       </main>
     </div>
   )
+
+  const cards = resourcesContent.map(item => {
+    return (
+      <CardList 
+          city={item.CITY}
+          loc_name={item.LOC_NAME}
+          GWMA={item.GWMA}
+          BASIN_NAME={item.BASIN_NAME}
+      />
+    )
+  })
+
 }
