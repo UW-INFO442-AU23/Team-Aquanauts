@@ -4,7 +4,7 @@ import SearchBar from '../SearchBar.js';
 import { CardList } from '../CardList.js';
 import '../../index.css';
 import NavBar from '../NavBar.js';
-import { resourcesContent } from "../../filteredWaterResources.js"
+import { resourcesContent } from "../../data/filteredWaterResources.js"
 const CARDINFO = [
   {locName: 'loc1', pic: '', }
 ];
