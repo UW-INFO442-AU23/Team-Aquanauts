@@ -53,7 +53,7 @@ export default function EducationPage(props) {
                     <p class="card-text">Despite King County having some of the cleanest water from it's watersheds,
                                           there are still some common water quality problems within the county that.
                                           Click the link button to read about some of the problems that plague the water in King County.</p>
-                    <a href="#" class="btn btn-outline-primary">Click Me!</a>
+                    <a href="https://www.culligan.com/blog/featured-article/seattle-water-quality-facts-and-drinking-water-problems" class="btn btn-outline-primary">Click Me!</a>
                   </div>
                 </div>
               </div>
@@ -72,8 +72,10 @@ export default function EducationPage(props) {
                 <div class="card-back bg-dark text-white">
                   <div class="card-body text-white">
                     <h3 class="card-title">Facts</h3>
-                    <p class="card-text">Suprise this one has content on the back!</p>
-                    <a href="#" class="btn btn-outline-primary">Action</a>
+                    <p class="card-text">Water Sanitation within King County is handeled within their wastewater services.
+                      There are many water treatment plants that serve the area since the year of 1956. Click the button to head to
+                      King County's Wastewater Services page to learn even more.</p>
+                    <a href="https://kingcounty.gov/en/legacy/services/environment/wastewater.aspx" class="btn btn-outline-primary">Click Me!</a>
                   </div>
                 </div>
               </div>
@@ -84,16 +86,19 @@ export default function EducationPage(props) {
               <div class="card card-flip h-100">
                 <div class="card-front text-white bg-dark">
                   <div class="card-body">
-                    <img src="../img/harbor-activity.jpg" class="card-img-top" alt="..." />
-                    <h3 class="card-title"></h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <img src="..\img\pgs-brandie-robbins.jpg" class="card-img-top" alt="..." />
+                    <h3 class="card-title">Public Facilities</h3>
+                    <p class="card-text">Hover to learn more about King County's public water facilites</p>
                   </div>
                 </div>
                 <div class="card-back bg-dark text-white">
                   <div class="card-body">
-                    <h3 class="card-title">Back</h3>
-                    <p class="card-text">Suprise this one has more more more more content on the back!</p>
-                    <a href="#" class="btn btn-outline-primary">Click Me!</a>
+                    <h3 class="card-title">Facts</h3>
+                    <p class="card-text">Did you know that King County has over 40+ public water facilites that 
+                                        you can use? A lot of them are found within public libraries and parks within the area
+                                        of Seattle. Click the button for a map detaling the facilities in the Seattle Area.</p>
+                    <a href="https://kingcountyschoolhealthdotcom.wordpress.com/2018/04/06/free-restrooms-showers-and-laundry-facilities-in-seattle/" 
+                      class="btn btn-outline-primary">Click Me!</a>
                   </div>
                 </div>
               </div>
@@ -104,16 +109,17 @@ export default function EducationPage(props) {
               <div class="card card-flip h-100">
                 <div class="card-front text-white bg-dark">
                   <div class="card-body">
-                    <img src="../img/harbor-activity.jpg" class="card-img-top" alt="..." />
-                    <h3 class="card-title">Front</h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <img src="..\img\elliot-bay-maximilian-ruther.jpg" class="card-img-top" alt="..." />
+                    <h3 class="card-title">Clean Conservation</h3>
+                    <p class="card-text">Hover over to learn about how to conserve clean water!</p>
                   </div>
                 </div>
                 <div class="card-back bg-dark text-white">
                   <div class="card-body">
-                    <h3 class="card-title">Back</h3>
-                    <p class="card-text">Suprise this one has more more more more content on the back!</p>
-                    <a href="#" class="btn btn-outline-primary">Click Me!</a>
+                    <h3 class="card-title">Facts</h3>
+                    <p class="card-text">Even though King County is surrounded by water all around there the area has run into times
+                                        where it must save water due to droughts and other climatic events.</p>
+                    <a href="https://www.seattle.gov/utilities/protecting-our-environment/sustainability-tips/conserve-water" class="btn btn-outline-primary">Click Me!</a>
                   </div>
                 </div>
               </div>
@@ -124,15 +130,15 @@ export default function EducationPage(props) {
               <div class="card card-flip h-100">
                 <div class="card-front text-white bg-dark">
                   <div class="card-body">
-                    <img src="../img/harbor-activity.jpg" class="card-img-top" alt="..." />
-                    <h3 class="card-title">Front</h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <img src="..\img\lakeunion-roman-pohorecki.jpg" class="card-img-top" alt="..." />
+                    <h3 class="card-title">Water Usage</h3>
+                    <p class="card-text">Hover to learn more about how water usage impacts King County.</p>
                   </div>
                 </div>
                 <div class="card-back bg-dark text-white">
                   <div class="card-body">
-                    <h3 class="card-title">Back</h3>
-                    <p class="card-text">Suprise this one has more more more more content on the back!</p>
+                    <h3 class="card-title">Facts</h3>
+                    <p class="card-text">Place holder for King County Water Usage information</p>
                     <a href="#" class="btn btn-outline-primary">Click Me!</a>
                   </div>
                 </div>
