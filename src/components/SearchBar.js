@@ -33,8 +33,7 @@ export default function SearchBar(props) {
       if (queryString.length === 10) {
         if (queryString[5] !== "-") {
           setErrorBool(true);
-          setErrorMessage("query is not formatted correctly (hypen not present or in the wrong place)");
-          console.log("query is not formatted correctly (hypen not present or in the wrong place)");
+          setErrorMessage("Your query is not formatted correctly (hypen not present or in the wrong place)");
         } else {
           checkNumeric(queryString.substring(0, 5), queryString.substring(6, queryString.length));
         }
@@ -44,8 +43,7 @@ export default function SearchBar(props) {
       }
     } else { // not 5 or 10 digits long
       setErrorBool(true);
-      setErrorMessage("query is not the right length");
-      console.log("query is not the right length");
+      setErrorMessage("The query you entered is not the right length. Please enter a five or nine digit zipcode.");
     }
   }
 
@@ -61,8 +59,7 @@ export default function SearchBar(props) {
         checkZip(firstHalf);
       } else { //contains something other than numbers
         setErrorBool(true);
-        setErrorMessage("query has characters other than numbers");
-        console.log("query has characters other than numbers");
+        setErrorMessage("Your query has characters in it other than numbers and a hyphen, please try again.");
       }
     } else { //ten digit route
       if (isNumeric(firstHalf) && isNumeric(secondHalf)) { //both are just numbers
@@ -71,8 +68,7 @@ export default function SearchBar(props) {
         }
       } else { //either has something other than a number
         setErrorBool(true);
-        setErrorMessage("query has characters other than numbers");
-        console.log("query has characters other than numbers");
+        setErrorMessage("Your query has characters in it other than numbers and a hyphen, please try again.");
       }
     }
   }
@@ -81,11 +77,9 @@ export default function SearchBar(props) {
   function checkZip(zip) {
     if (ZIPCODES.includes(zip)) {
       setErrorBool(false);
-      console.log("zip is in array");
     } else {
       setErrorBool(true);
-      setErrorMessage("zip is not in array");
-      console.log("zip is not in array");
+      setErrorMessage("The zipcode you entered does not fit the scope of this website. Please enter a King County zipcode for related locations.");
     }
   }
 
