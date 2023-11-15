@@ -3,7 +3,7 @@ import SearchBar from '../SearchBar.js';
 import { CardList } from '../CardList.js';
 import NavBar from '../NavBar.js';
 import { resourcesContent } from "../../data/filteredWaterResources.js";
-let temp = 0; //each card needs its own key. this is a temporary fix. didnt want to mess with your code too much
+let temp = 0;
 
 const cards = resourcesContent.map(item => {
   temp = temp + 1;
@@ -13,7 +13,7 @@ const cards = resourcesContent.map(item => {
         loc_name={item.LOC_NAME}
         GWMA={item.GWMA}
         BASIN_NAME={item.BASIN_NAME}
-        key={temp} //part of the fix
+        key={temp}
     />
   )
 })

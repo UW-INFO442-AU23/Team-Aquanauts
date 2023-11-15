@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { CardDetails } from "./CardDetails.js";
 
 export function CardList(props) {
-    const cardBox = props.card;
 
     return (
         <div className="card-list">
@@ -11,10 +9,10 @@ export function CardList(props) {
                 <Link to="/location" className="card-link">
                     <div className="single-card-box">
                         <div className="card-text">
-                            <h2 className="card-title">Location</h2>
+                            <h2 className="card-title">{props.loc_name}</h2>
                         </div>
                         <div className="card-image-box">
-                            <img src="img/cat.png" alt="test image" className="card-image" />
+                            <img src="img/empty.png" alt="test image" className="card-image" />
                         </div>
                     </div>
                 </Link>
