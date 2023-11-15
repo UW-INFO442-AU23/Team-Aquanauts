@@ -1,14 +1,24 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
 import SearchBar from '../SearchBar.js';
 import { CardList } from '../CardList.js';
-import '../../index.css';
 import NavBar from '../NavBar.js';
-import { resourcesContent } from "../../data/filteredWaterResources.js"
-const CARDINFO = [
-  {locName: 'loc1', pic: '', }
-];
-// import json file 
+import { resourcesContent } from "../../data/filteredWaterResources.js";
+let temp = 0; //each card needs its own key. this is a temporary fix. didnt want to mess with your code too much
+
+const cards = resourcesContent.map(item => {
+  temp = temp + 1;
+  return (
+    <CardList
+        city={item.CITY}
+        loc_name={item.LOC_NAME}
+        GWMA={item.GWMA}
+        BASIN_NAME={item.BASIN_NAME}
+        key={temp} //part of the fix
+    />
+  )
+})
+
+// import json file
 // import file from "../filteredWaterResources.json" with { type: "json"};
 // console.log(file.filteredWaterResources);
 
@@ -24,24 +34,11 @@ export default function ResourcePage(props) {
       <NavBar />
       <header>
         <h1>Resource Page</h1>
-        <nav>
-        </nav>
       </header>
       <main>
-        <SearchBar/>    
+        <SearchBar/>
+        {cards}
       </main>
     </div>
   )
-
-  const cards = resourcesContent.map(item => {
-    return (
-      <CardList 
-          city={item.CITY}
-          loc_name={item.LOC_NAME}
-          GWMA={item.GWMA}
-          BASIN_NAME={item.BASIN_NAME}
-      />
-    )
-  })
-
 }
