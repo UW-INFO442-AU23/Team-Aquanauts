@@ -108,7 +108,7 @@
 }
 
 .card-title {
-    width: 292px;
+    width: 450px;
     height: 41px;
     left: 211px;
     top: 371px;
@@ -119,15 +119,33 @@
     color: #ECF9F9;
 }
 
+.card-city {
+    width: 450px;
+    height: 41px;
+    font-size: 30px;
+}
+
+.card-zipcode {
+    width: 450px;
+    height: 41px;
+    font-size: 30px;
+}
+
+.card-basin-name {
+    width: 450px;
+    height: 41px;
+    font-size: 30px;
+}
+
 .card-image-box {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .card-image {
-    width: 374px;
-    height: 330px;
+    width: 170px;
+    height: 150px;
     border-radius: 5px;
 }
 

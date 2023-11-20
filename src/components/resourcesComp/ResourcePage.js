@@ -28,7 +28,7 @@ export default function ResourcePage(props) {
         <CardList
             city={item.CITY}
             loc_name={item.LOC_NAME}
-            GWMA={item.GWMA}
+            ZIPCODE={item.ZIPCODE}
             BASIN_NAME={item.BASIN_NAME}
             key={temp}
         />
@@ -39,7 +39,7 @@ export default function ResourcePage(props) {
           <CardList
               city={item.CITY}
               loc_name={item.LOC_NAME}
-              GWMA={item.GWMA}
+              ZIPCODE={item.ZIPCODE}
               BASIN_NAME={item.BASIN_NAME}
               key={temp}
           />
