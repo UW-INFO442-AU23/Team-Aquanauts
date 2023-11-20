@@ -77,6 +77,7 @@ export default function SearchBar(props) {
   function checkZip(zip) {
     if (ZIPCODES.includes(zip)) {
       setErrorBool(false);
+      props.setZipcode(zip);
     } else {
       setErrorBool(true);
       setErrorMessage("The zipcode you entered does not fit the scope of this website. Please enter a King County zipcode for related locations.");
