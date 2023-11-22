@@ -8,16 +8,16 @@ let temp = 0;
 
 export default function ResourcePage(props) {
   const [searchZip, setSearchZip] = useState('');
-  
+
   const cards = resourcesContent.map(item => {
     temp = temp + 1;
     if (searchZip.length === 0) { //default
       return (
         <CardList
-            city={item.CITY}
-            loc_name={item.LOC_NAME}
-            ZIPCODE={item.ZIPCODE}
-            BASIN_NAME={item.BASIN_NAME}
+            title={item.CITY}
+            field1={item.LOC_NAME}
+            field2={item.ZIPCODE}
+            field3={item.BASIN_NAME}
             key={temp}
         />
       )
@@ -25,10 +25,10 @@ export default function ResourcePage(props) {
       if (searchZip == item.ZIPCODE) {
         return (
           <CardList
-              city={item.CITY}
-              loc_name={item.LOC_NAME}
-              ZIPCODE={item.ZIPCODE}
-              BASIN_NAME={item.BASIN_NAME}
+              title={item.CITY}
+              field1={item.LOC_NAME}
+              field2={item.ZIPCODE}
+              field3={item.BASIN_NAME}
               key={temp}
           />
         )
@@ -45,7 +45,7 @@ export default function ResourcePage(props) {
       <main>
         <SearchBar setZipcode={setSearchZip} />
         {cards}
-        
+
       </main>
     </div>
   )
