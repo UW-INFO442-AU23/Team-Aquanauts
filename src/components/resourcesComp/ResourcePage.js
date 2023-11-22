@@ -6,21 +6,9 @@ import { resourcesContent } from "../../data/filteredWaterResources.js";
 import { useRef, useState } from "react";
 let temp = 0;
 
-
-
-// import json file
-// import file from "../filteredWaterResources.json" with { type: "json"};
-// console.log(file.filteredWaterResources);
-
-// const fs = require('fs');
-// const filePath = '../filteredWaterResources.json';
-// const jsonData = fs.readFileSync(filePath, 'utf-8');
-// const parsedData = JSON.parse(jsonData);
-// console.log(parsedData.filteredWaterResources);
-
 export default function ResourcePage(props) {
   const [searchZip, setSearchZip] = useState('');
-
+  
   const cards = resourcesContent.map(item => {
     temp = temp + 1;
     if (searchZip.length === 0) { //default
@@ -57,6 +45,7 @@ export default function ResourcePage(props) {
       <main>
         <SearchBar setZipcode={setSearchZip} />
         {cards}
+        
       </main>
     </div>
   )
