@@ -3,14 +3,14 @@ import React from 'react';
 export default function DropSearch(props) {
   return (
     <div className="dropdown">
-      <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
         Dropdown button
       </button>
-      <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a className="dropdown-item" href="#">Action</a>
-        <a className="dropdown-item" href="#">Another action</a>
-        <a className="dropdown-item" href="#">Something else here</a>
-      </div>
+      <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a className="dropdown-item" href="#">Action</a></li>
+        <li><a className="dropdown-item" href="#">Another action</a></li>
+        <li><a className="dropdown-item" href="#">Something else here</a></li>
+      </ul>
     </div>
   )
 }
