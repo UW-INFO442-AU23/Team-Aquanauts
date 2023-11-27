@@ -6,10 +6,12 @@ export function CardDetails(props) {
     return (
         <div className="details-container">
             <div className="location-name-text">
-                <h1 className="name-of-location">Name of Location</h1>
+                <h1 className="name-of-location">{props.LOC_NAME}</h1>
             </div>
             <div className="details-image-box">
-                <img src="img/cat.png" alt="test image" className="details-image"/>
+                <h2>{props.BASIN_NAME}</h2>
+                <h2>{props.LOC_TYPE}</h2>
+                <h2>{props.CITY}</h2>
             </div>
             <div className="fav-button">
                 <button className="fav-location-button">Favorite this location!</button>
