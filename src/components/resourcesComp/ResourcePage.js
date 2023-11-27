@@ -44,7 +44,10 @@ export default function ResourcePage(props) {
       </header>
       <main>
         <SearchBar setZipcode={setSearchZip} />
-        {cards}
+
+        <div className="card-list">
+          {cards}
+        </div>
 
       </main>
     </div>

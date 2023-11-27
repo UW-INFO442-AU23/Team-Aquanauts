@@ -11,13 +11,13 @@ export default function DonationPage(props) {
     temp = temp + 1;
     return (
       <CardList
-          title={item.Name}
-          field1={item['Mission Statement']}
-          field2={item.Focus}
-          field3={item.Website}
-          key={temp}
+        title={item.Name}
+        field1={item['Mission Statement']}
+        field2={item.Focus}
+        field3={item.Website}
+        key={temp}
       />
-      )
+    )
   })
 
   return (
@@ -28,7 +28,10 @@ export default function DonationPage(props) {
       </header>
       <main>
         <DropSearch />
-        {cards}
+
+        <div className="card-list">
+          {cards}
+        </div>
       </main>
     </div>
   )
