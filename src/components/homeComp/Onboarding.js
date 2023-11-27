@@ -15,6 +15,10 @@ export default function Onboarding(props) {
                     </header>
                 </div>
 
+                <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LCKsU4bPFOQ?si=xWd3xcz-l96bG57P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
                 <main>
                     <div className="onboarding-about">
                         <p className="mission-statement">Our goal is to promote water and sanitation access in King County. We want to educate the people of King County
