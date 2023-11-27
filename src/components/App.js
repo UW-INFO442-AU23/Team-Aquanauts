@@ -12,7 +12,7 @@ import ResourcePage from './resourcesComp/ResourcePage.js';
 import DonationPage from './donationsComp/DonationPage.js';
 import EducationPage from './educationComp/EducationPage.js';
 import withSplashScreen from './withSplashScreen';
-import CardDetailsPage from "./CardDetails.js";
+import CardDetailsPage from "./resourcesComp/CardDetails.js";
 import Onboarding from './homeComp/Onboarding.js';
 import { render } from '@testing-library/react';
 

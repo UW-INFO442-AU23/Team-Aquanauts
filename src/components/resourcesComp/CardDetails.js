@@ -19,3 +19,5 @@ export function CardDetails(props) {
         </div>
     )
 }
+
+export default CardDetails;

@@ -14,19 +14,18 @@ export default function Onboarding(props) {
                         <h1 className="onboarding-aquapod-header">AquaPod</h1>
                     </header>
                 </div>
-
-                <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/LCKsU4bPFOQ?si=xWd3xcz-l96bG57P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-
                 <main>
                     <div className="onboarding-about">
-                        <p className="mission-statement">Our goal is to promote water and sanitation access in King County. We want to educate the people of King County
-                            on water facilities to ensure that they can locate necessary sanitation resources as well as opportunities to donate.
-                            Our mission supports the United Nations SDG of Clean Water and Sanitation by making it easy for people to educate themselves on
-                            water scarcity and hygiene as well as find free water resources and opportunities to donate to charities that share our
-                            goals.</p>
-
+                        <div className="onboarding-intro">
+                            <p className="mission-statement">Our goal is to promote water and sanitation access in King County. We want to educate the people of King County
+                                on water facilities to ensure that they can locate necessary sanitation resources as well as opportunities to donate.
+                                Our mission supports the United Nations SDG of Clean Water and Sanitation by making it easy for people to educate themselves on
+                                water scarcity and hygiene as well as find free water resources and opportunities to donate to charities that share our
+                                goals.</p>
+                            <div className="un-video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/LCKsU4bPFOQ?si=xWd3xcz-l96bG57P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
                         <h2 className="button-link-header-onboarding">What to get on board? Are you a...</h2>
                         <div className="button-links-onboarding">
                             <div className="d-flex flex-row w-25" id="aquanaut-links">
