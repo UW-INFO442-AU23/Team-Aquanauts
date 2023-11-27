@@ -195,7 +195,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 90vh;
+    height: 55%;
     background-image: linear-gradient(to bottom right, rgba(131, 210, 215), rgba(237, 253, 245));
     z-index: -1;
 }
