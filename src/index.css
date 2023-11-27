@@ -75,8 +75,9 @@
     padding: 15px 20px;
 }
 
-.button-links a {
-    color: rgba(231, 242, 253);
+.button-links a:hover {
+    color: rgba(17, 124, 131);
+    background-color: rgba(213, 242, 244);
 }
 
 #apply-search {
@@ -271,6 +272,11 @@
     padding: 15px 30px;
     white-space: nowrap;
     min-width: 250px;
+}
+
+#aquanaut-links a:hover {
+    color: rgba(17, 124, 131);
+    background-color: rgba(213, 242, 244);
 }
 
 .features-onboarding {
