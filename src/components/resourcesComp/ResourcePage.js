@@ -39,11 +39,17 @@ export default function ResourcePage(props) {
   return (
     <div className="background-page">
       <NavBar />
-      <header>
+      <header className="page-title">
         <h1>Resource Page</h1>
       </header>
       <main>
-        <SearchBar setZipcode={setSearchZip} />
+        <div className="search-bar">
+          <div className="search-title">
+            <p>Search by zipcode!</p>
+          </div>
+          <SearchBar setZipcode={setSearchZip} />
+        </div>
+        
 
         <div className="card-list">
           {cards}

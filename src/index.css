@@ -84,6 +84,20 @@
     color: rgba(231, 242, 253);
 }
 
+.page-title {
+    color: #024343;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.search-bar {
+    margin-left: 100px;
+}
+
+.search-title {
+    font-size: 25px;
+}
+
 
 /* CardList */
 .card-list {
@@ -99,7 +113,7 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 75px 0px;
+    padding: 75px 60px;
 }
 
 .single-card-box {

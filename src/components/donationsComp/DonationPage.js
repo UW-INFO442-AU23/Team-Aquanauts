@@ -23,7 +23,7 @@ export default function DonationPage(props) {
   return (
     <div className="background-page">
       <NavBar />
-      <header>
+      <header className="page-title">
         <h1>Donation Page</h1>
       </header>
       <main>

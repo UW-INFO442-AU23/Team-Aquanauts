@@ -7,7 +7,7 @@ export default function EducationPage(props) {
   return (
     <div className="background-page">
       <NavBar />
-      <header>
+      <header className="page-title">
         <h1>Education Page</h1>
       </header>
       <main>
