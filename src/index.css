@@ -12,7 +12,7 @@
 
 .background-page, .details-container {
     background-image: linear-gradient(to bottom right, rgba(194, 237, 239), rgba(238, 249, 250));
-    height: 100vh;
+    height: 100%;
 }
 
 .background-onboard {
@@ -86,16 +86,16 @@
 
 
 /* CardList.js */
+.card-list {
+    justify-content: space-between;
+}
+
 .card-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 100px;
-    padding-top: 100px;
-    padding-right: 75px;
-    padding-bottom: 75px;
+    padding: 100px 75px;
 }
 
 .single-card-box {
