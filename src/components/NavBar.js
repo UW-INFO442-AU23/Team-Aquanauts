@@ -10,13 +10,13 @@ export default function NavBar(props) {
           <div className="top-nav">
             <div className="nav-container">
               <div className="title-bar">
-                <Link to="home"><h1>the AquaPod</h1></Link>
+                <Link to="home" style={{textDecoration: 'none'}}><h1>the AquaPod</h1></Link>
               </div>
               <div className="nav-bar">
                 <div className="nav-links">
-                  <NavLink to="/resources">Resources</NavLink>
-                  <NavLink to="/donations">Donate</NavLink>
-                  <NavLink to="/education">Education</NavLink>
+                  <NavLink to="/resources" style={{textDecoration: 'none'}}>Resources</NavLink>
+                  <NavLink to="/donations" style={{textDecoration: 'none'}}>Donate</NavLink>
+                  <NavLink to="/education" style={{textDecoration: 'none'}}>Education</NavLink>
                 </div>
               </div>
             </div>
