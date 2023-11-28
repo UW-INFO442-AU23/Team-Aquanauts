@@ -319,7 +319,7 @@ export const charityContent = [
    "Focus": "Wastewater",
    "Beneficiary": "Impacted Communities"
  },
- {
+ { 
    "Name": "Clean Water Action",
    "Website": "https://www.cleanwateraction.org/",
    "Region": "New England",
@@ -337,7 +337,7 @@ export const charityContent = [
  },
  {
    "Name": "Clean Water Construction Coalition (CWCC)",
-   "Website": "https://www.clean…",
+   "Website": "https://www.cleanwaterconstructioncoalition.org/",
    "Region": "Nationwide",
    "Entity": "Collaborative/Netw…",
    "Mailing Address": "P.O. Box 728, Allenwood, …",
@@ -345,7 +345,7 @@ export const charityContent = [
    "Primary Contact, Title": "Dan Kennedy, Chairman",
    "Primary Contact Email": "kennedy@utcanj.org",
    "Primary Contact Phone": "",
-   "Mission Statement": "The mission of the Clean W…",
+   "Mission Statement": "The mission of the Clean Water Construction Coalition is to promote federal actions that increase funding and accelerate project delivery for water infrastructure and related projects.",
    "Role in US WaSH Sector": "The Clean Water Construction Co…",
    "Approach": "Policy Advocacy",
    "Focus": "Infrastructure",
@@ -353,7 +353,7 @@ export const charityContent = [
  },
  {
    "Name": "Clean Water for All",
-   "Website": "http://protectclea…",
+   "Website": "http://protectcleanwater.org/",
    "Region": "Nationwide",
    "Entity": "Collaborative/Netw…",
    "Mailing Address": "National Wildlife Federatio…",
@@ -361,13 +361,13 @@ export const charityContent = [
    "Primary Contact, Title": "Jenifer Collins, Director of Operations",
    "Primary Contact Email": "collinsj@nwf.org",
    "Primary Contact Phone": "",
-   "Mission Statement": "Our Coalition has a long-te…",
+   "Mission Statement": "Our Coalition has a long- term vision of seeing every community with access to safe and affordable clean water that supports healthy communities, healthy ecosystems, cultural resources, and wildlife.",
    "Role in US WaSH Sector": "Clean Water for All is a broad co…",
    "Approach": "Policy Advocacy",
    "Focus": "Water Access",
    "Beneficiary": "Implementing Organizations"
  },
- {
+ { 
    "Name": "Clean Water for North Carolina",
    "Website": "https://cwfnc.org/",
    "Region": "Southeast",
@@ -377,7 +377,7 @@ export const charityContent = [
    "Primary Contact, Title": "Rachel Velez, Program Director, Water Just…",
    "Primary Contact Email": "rachel@cwfnc.org",
    "Primary Contact Phone": "(919) 401-9600",
-   "Mission Statement": "To promote clean, safe wat…",
+   "Mission Statement": "To promote clean, safe water and environments and empowered, just communities for all North Carolinians through community organizing, education, advocacy and technical assistance.",
    "Role in US WaSH Sector": "Clean Water for NC works directl…",
    "Approach": "Policy Advocacy",
    "Focus": "Wastewater",
@@ -385,7 +385,7 @@ export const charityContent = [
  },
  {
    "Name": "Clean Water Fund",
-   "Website": "https://www.clean…",
+   "Website": "https://www.cleanwaterfund.org/",
    "Region": "Nationwide",
    "Entity": "NGO",
    "Mailing Address": "1444 I Street NW Suite 400…",
@@ -393,7 +393,7 @@ export const charityContent = [
    "Primary Contact, Title": "Michael Kelly, Communications Director",
    "Primary Contact Email": "mkelly@cleanwater.org",
    "Primary Contact Phone": "",
-   "Mission Statement": "Clean Water Fund's mission…",
+   "Mission Statement": "Clean Water Fund's mission is to develop strong grassroots environmental leadership and to bring together diverse constituencies to work cooperatively for changes that improve their lives, focused on health, consumer, environmental and community problems.",
    "Role in US WaSH Sector": "Clean Water Fund's programs bu…",
    "Approach": "Funding",
    "Focus": "Wastewater",
@@ -401,7 +401,7 @@ export const charityContent = [
  },
  {
    "Name": "Columbia University, Columbia Water Center",
-   "Website": "http://water.colu…",
+   "Website": "http://water.columbia.edu/Nationwide",
    "Region": "Nationwide",
    "Entity": "Academia",
    "Mailing Address": "842 Mudd, 500 W 120th St…",
@@ -409,15 +409,15 @@ export const charityContent = [
    "Primary Contact, Title": "Upmanu Lall, Director",
    "Primary Contact Email": "ula2@columbia.edu",
    "Primary Contact Phone": "(212) 854-8905",
-   "Mission Statement": "Our mission is to creatively…",
+   "Mission Statement": "Our mission is to creatively tackle water challenges of a rapidly changing world where water and climate interact with food, energy, ecosystems and urbanization. Combining the rigor of scientific research with the impact of effective policy, we aim to design reliable, sustainable models of water management and development that can be implemented on local, regional and global levels.",
    "Role in US WaSH Sector": "Research at various levels for sol…",
    "Approach": "Research & Development",
    "Focus": "Wastewater",
    "Beneficiary": "Households"
  },
- {
+ { /* last done here Nov 27 */
    "Name": "Columbia University, Human Rights Institute",
-   "Website": "https://web.law.c…",
+   "Website": "https://web.law.columbia.edu/human-rights-institute",
    "Region": "Southeast",
    "Entity": "NGO",
    "Mailing Address": "435 West 116th Street, NY …",
@@ -425,7 +425,7 @@ export const charityContent = [
    "Primary Contact, Title": "Sarah Knuckey, Faculty Co-Director, Huma…",
    "Primary Contact Email": "humanrightsinstitute.cls@gmail.com",
    "Primary Contact Phone": "",
-   "Mission Statement": "The Human Rights Institute…",
+   "Mission Statement": "The Human Rights Institute (HRI) is one of the oldest and largest law school human rights centers in the world. An anchor for the human rights community at Columbia Law School, it advances international human rights through education, advocacy, fact- finding, research, scholarship, and critical reflection. Working in partnership with advocates, communities, and organizations pushing for social change, HRI promotes justice and accountability for human rights violations, strengthens human rights law and institutions, and builds and amplifies collective power. Founded in 1998 by the late Professor Louis Henkin, HRI promotes engagement and knowledge of human rights within the law school, throughout the university, and around the world. Across the many substantive areas of its work, the institute builds bridges between scholarship and activism, develops capacity within the legal community, engages governments, and models new strategies for progress.",
    "Role in US WaSH Sector": "HRI documents violations of the …",
    "Approach": "Policy Advocacy",
    "Focus": "Wastewater",
