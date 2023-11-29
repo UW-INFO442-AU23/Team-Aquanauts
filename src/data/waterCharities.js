@@ -559,7 +559,7 @@ export const charityContent = [
    "Focus": "Infrastructure",
    "Beneficiary": "Implementing Organizations"
  },
- { /* ended here 11/28 */
+ { 
    "Name": "Duke University, Nicholas Institute for Environmental Policy Solutions",
    "Website": "https://nicholasinstitute.duke.edu/",
    "Region": "Nationwide",
@@ -575,7 +575,7 @@ export const charityContent = [
    "Focus": "Technology Adv",
    "Beneficiary": "Local & State Government"
  },
- {
+ { 
    "Name": "Earthjustice",
    "Website": "earthjustice.org",
    "Region": "Nationwide",
@@ -585,7 +585,7 @@ export const charityContent = [
    "Primary Contact, Title": "Gussie Lord, Managing Attorney, Tribal Par…",
    "Primary Contact Email": "tribalpartnerships@earthjustice.org",
    "Primary Contact Phone": "",
-   "Mission Statement": "We wield the power of law …",
+   "Mission Statement": "We wield the power of law and the strength of partnership to protect people’s health, to preserve magnificent places and wildlife, to advance clean energy, and to combat climate change.",
    "Role in US WaSH Sector": "Provide pro bono legal represent…",
    "Approach": "Policy Advocacy",
    "Focus": "Wastewater",
@@ -593,7 +593,7 @@ export const charityContent = [
  },
  {
    "Name": "Elevate",
-   "Website": "https://www.eleva…",
+   "Website": "https://www.elevatenp.org/",
    "Region": "Midwest",
    "Entity": "NGO",
    "Mailing Address": "322 S. Green St., Suite 300 …",
@@ -601,7 +601,7 @@ export const charityContent = [
    "Primary Contact, Title": "Caroline Pakenham, Senior Manager, Wate…",
    "Primary Contact Email": "Caroline.Pakenham@elevatenp.org",
    "Primary Contact Phone": "",
-   "Mission Statement": "Elevate seeks to create a ju…",
+   "Mission Statement": "Elevate seeks to create a just and equitable world in which everyone has clean and affordable heat, power, and water in their homes and communities — no matter who they are or where they live.",
    "Role in US WaSH Sector": "Elevate works with communities, …",
    "Approach": "Policy Advocacy",
    "Focus": "Wastewater",
@@ -609,7 +609,7 @@ export const charityContent = [
  },
  {
    "Name": "End Water Poverty",
-   "Website": "https://www.end…",
+   "Website": "https://www.endwaterpoverty.org/",
    "Region": "Nationwide",
    "Entity": "Collaborative/Netw…",
    "Mailing Address": "c/o WaterAid, 6th Floor, 20…",
@@ -617,7 +617,7 @@ export const charityContent = [
    "Primary Contact, Title": "Sam Taylor, Engagement Officer",
    "Primary Contact Email": "samtaylor@endwaterpoverty.org",
    "Primary Contact Phone": "",
-   "Mission Statement": "End Water Poverty (EWP) is…",
+   "Mission Statement": "End Water Poverty (EWP) is a global civil society coalition campaigning for governments to respect, protect and fulfill people's rights to safe water and sanitation.",
    "Role in US WaSH Sector": "EWP's membership includes orga…",
    "Approach": "Capacity Building & Education",
    "Focus": "Wastewater",
@@ -625,7 +625,7 @@ export const charityContent = [
  },
  {
    "Name": "Engineering Ministries International (EMI)",
-   "Website": "https://emiworld.…",
+   "Website": "https://emiworld.org/",
    "Region": "Alaska",
    "Entity": "NGO",
    "Mailing Address": "130 E. Kiowa Street, Suite 2…",
@@ -633,15 +633,15 @@ export const charityContent = [
    "Primary Contact, Title": "Jason Chandler, WASH Program Manager",
    "Primary Contact Email": "wash@emiworld.org",
    "Primary Contact Phone": "(719) 633-2078 Ext 118",
-   "Mission Statement": "To develop people, design …",
+   "Mission Statement": "To develop people, design structures, and construct facilities which serve communities and the Church.",
    "Role in US WaSH Sector": "In addition to its international w…",
    "Approach": "Technical Assistance",
    "Focus": "Wastewater",
    "Beneficiary": "Impacted Communities"
  },
- {
+ { 
    "Name": "Environmental Finance Center Network (EFCN)",
-   "Website": "https://efcnetwor…",
+   "Website": "https://efcnetwork.org/",
    "Region": "U.S. Territories",
    "Entity": "Academia",
    "Mailing Address": "v210 University Blvd, SE; MS…",
@@ -649,7 +649,7 @@ export const charityContent = [
    "Primary Contact, Title": "Heather Himmelberger, Director, Southwe…",
    "Primary Contact Email": "heatherh@unm.edu",
    "Primary Contact Phone": "(505) 277-0644",
-   "Mission Statement": "We promote self-reliance t…",
+   "Mission Statement": "We promote self-reliance through innovative training and assistance focused on actionable results.",
    "Role in US WaSH Sector": "We provide training and technica…",
    "Approach": "Funding",
    "Focus": "Wastewater",
@@ -665,7 +665,7 @@ export const charityContent = [
    "Primary Contact, Title": "Esperanza Vielma, Chair Board of Directors",
    "Primary Contact Email": "espe@ejc4w.org",
    "Primary Contact Phone": "",
-   "Mission Statement": "Our mission is to educate, …",
+   "Mission Statement": "Our mission is to educate, empower, and nurture a community-based coalition that serves as a public voice and an effective advocate for environmental justice issues in California water policy.",
    "Role in US WaSH Sector": "EJCW is a statewide coalition of …",
    "Approach": "Policy Advocacy",
    "Focus": "Water Access",
@@ -673,7 +673,7 @@ export const charityContent = [
  },
  {
    "Name": "Environmental Policy Innovation Center (EPIC)",
-   "Website": "http://policyinnov…",
+   "Website": "http://policyinnovation.org/",
    "Region": "Nationwide",
    "Entity": "NGO",
    "Mailing Address": "700 K street NW, Washingt…",
@@ -681,7 +681,7 @@ export const charityContent = [
    "Primary Contact, Title": "Sri Vedachalam, Director of Water",
    "Primary Contact Email": "sri@policyinnovation.org",
    "Primary Contact Phone": "",
-   "Mission Statement": "The Environmental Policy I…",
+   "Mission Statement": "The Environmental Policy Innovation Center builds policies that deliver spectacular improvement in the speed and scale of environmental progress. A nonprofit start-up, EPIC is committed to finding and highlighting the best approaches to scaling up results quickly. EPIC focuses on clean water, endangered species, environmental markets and the use of data and technology in producing conservation outcomes. Our work in water focuses on innovative financing, outcomes based stream and wetland restoration, water quality partnerships, utility consolidation, and the role of data technology in improving consumer trust.",
    "Role in US WaSH Sector": "Our focus is on innovative policie…",
    "Approach": "Policy Advocacy",
    "Focus": "Infrastructure",
@@ -689,7 +689,7 @@ export const charityContent = [
  },
  {
    "Name": "Environmental Protection Agency, Office of Ground Water and Drink…",
-   "Website": "www.epa.gov/gro…",
+   "Website": "https://www.epa.gov/ground-water-and-drinking-water",
    "Region": "Nationwide",
    "Entity": "Government",
    "Mailing Address": "1200 Pennsylvania Ave., N…",
@@ -697,7 +697,7 @@ export const charityContent = [
    "Primary Contact, Title": "Cathy Davis, Chief, Protection Branch, Offi…",
    "Primary Contact Email": "davis.catherinem@epa.gov",
    "Primary Contact Phone": "(202) 564-2703",
-   "Mission Statement": "The mission of EPA is to pr…",
+   "Mission Statement": "The mission of EPA is to protect human health and the environment. EPA's Office of Ground Water and Drinking Water implements the",
    "Role in US WaSH Sector": "EPA's Office of Ground Water an…",
    "Approach": "Funding",
    "Focus": "Infrastructure",
@@ -713,15 +713,15 @@ export const charityContent = [
    "Primary Contact, Title": "Andrew Sawyers, Director",
    "Primary Contact Email": "sawyers.andrew@epa.gov",
    "Primary Contact Phone": "(202) 564-5668",
-   "Mission Statement": "The mission of EPA is to pr…",
+   "Mission Statement": "The mission of EPA is to protect human health and the environment.",
    "Role in US WaSH Sector": "EPA/OWM works with other fede…",
    "Approach": "Funding",
    "Focus": "Wastewater",
    "Beneficiary": "Households"
  },
- {
+ { /* Nov 29 */
    "Name": "Environmental Protection Network",
-   "Website": "https://www.envir…",
+   "Website": "https://www.environmentalprotectionnetwork.org/",
    "Region": "Nationwide",
    "Entity": "NGO",
    "Mailing Address": "P.O. Box 42022 Washingto…",
@@ -729,7 +729,7 @@ export const charityContent = [
    "Primary Contact, Title": "Michelle Roos, Executive Director",
    "Primary Contact Email": "michelle.roos@environmentalprotecti…",
    "Primary Contact Phone": "(646) 361-6928",
-   "Mission Statement": "Preserve and advance the …",
+   "Mission Statement": "Preserve and advance the nation’s bipartisan legacy of progress towards clean air, water and land and climate protection",
    "Role in US WaSH Sector": "We operate a network of 550 EP…",
    "Approach": "Policy Advocacy",
    "Focus": "Wastewater",
