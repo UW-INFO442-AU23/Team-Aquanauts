@@ -42,9 +42,9 @@ export default function Onboarding(props) {
                             <p className="title-desc">Navigate through any one of our offered opportunities!</p>
                         </div>
                         <div className="features-images">
-                            <img className="resource-icon" src="/public/img/Drop.png" alt="waterdrop resource icon"/>
-                            <img className="donation-icon" src="img/Smiley.png" alt="smile face donation icon"/>
-                            <img className="education-icon" src="img/BookBookmark.png" alt="book education icon"/>
+                            <img className="resource-icon" src="https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/Drop.png?raw=true" alt="waterdrop resource icon"/>
+                            <img className="donation-icon" src="https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/Smiley.png?raw=true" alt="smile face donation icon"/>
+                            <img className="education-icon" src="https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/BookBookmark.png?raw=true" alt="book education icon"/>
                         </div>
                         <div className="features-feature-titles">
                             <h3 className="resource-title">Resources</h3>
