@@ -19,7 +19,7 @@ export default function EducationPage(props) {
               <div className="card card-flip h-100">
                 <div className="card-front text-white bg-dark">
                   <div className="card-body">
-                    <img src="../img/harbor-activity.jpg" className="card-img-top" alt="..." />
+                    <img src="https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/harbor-activity.jpg?raw=true" className="card-img-top" alt="..." />
                     <h3 className="flip-card-title">King County Water</h3>
                     <p className="card-text">Hover to learn more about where King County gets water!</p>
                   </div>
@@ -42,7 +42,7 @@ export default function EducationPage(props) {
               <div className="card card-flip h-100">
                 <div className="card-front text-white bg-dark">
                   <div className="card-body">
-                    <img src="..\img\water-lisa-fotio.jpg" className="card-img-top" alt="..." />
+                    <img src="https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/water-lisa-fotio.jpg?raw=true" className="card-img-top" alt="..." />
                     <h3 className="flip-card-title">Water Quality Issues</h3>
                     <p className="card-text">Hover to learn more about common water quality problems in King County</p>
                   </div>
@@ -64,7 +64,7 @@ export default function EducationPage(props) {
               <div className="card card-flip h-100">
                 <div className="card-front text-white bg-dark">
                   <div className="card-body">
-                    <img src="..\img\water-burst.jpg" className="card-img-top" alt="..." />
+                    <img src="https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/water-burst.jpg?raw=true" className="card-img-top" alt="..." />
                     <h3 className="flip-card-title">King County Sanitation</h3>
                     <p className="card-text">Hover to learn more about water sanitation in King County</p>
                   </div>
@@ -86,7 +86,7 @@ export default function EducationPage(props) {
               <div className="card card-flip h-100">
                 <div className="card-front text-white bg-dark">
                   <div className="card-body">
-                    <img src="..\img\pgs-brandie-robbins.jpg" className="card-img-top" alt="..." />
+                    <img src="https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/pgs-brandie-robbins.jpg?raw=true" className="card-img-top" alt="..." />
                     <h3 className="flip-card-title">Public Facilities</h3>
                     <p className="card-text">Hover to learn more about King County's public water facilites</p>
                   </div>
@@ -109,7 +109,7 @@ export default function EducationPage(props) {
               <div className="card card-flip h-100">
                 <div className="card-front text-white bg-dark">
                   <div className="card-body">
-                    <img src="..\img\elliot-bay-maximilian-ruther.jpg" className="card-img-top" alt="..." />
+                    <img src="https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/elliot-bay-maximilian-ruther.jpg?raw=true" className="card-img-top" alt="..." />
                     <h3 className="flip-card-title">Clean Conservation</h3>
                     <p className="card-text">Hover over to learn about how to conserve clean water!</p>
                   </div>
@@ -130,7 +130,7 @@ export default function EducationPage(props) {
               <div className="card card-flip h-100">
                 <div className="card-front text-white bg-dark">
                   <div className="card-body">
-                    <img src="..\img\lakeunion-roman-pohorecki.jpg" className="card-img-top" alt="..." />
+                    <img src="https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/lakeunion-roman-pohorecki.jpg?raw=true" className="card-img-top" alt="..." />
                     <h3 className="flip-card-title">Water Usage</h3>
                     <p className="card-text">Hover to learn more about how water usage impacts King County.</p>
                   </div>
