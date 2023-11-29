@@ -4,6 +4,7 @@
 
 **Members:** Taiga, Emily, Cindy, Jianna, Joseph
 
+**Website Link:** https://uw-info442-au23.github.io/aquanauts/
 
 **Purpose:**
 This project focuses on Goal 6 from the UN SDGS: Clean Water and Sanitation. This issue arises due to water resources, specifically sanitized and clean drinking water, are not easily accessible to the majority of people. As the UN explains, “2.2 billion people still lacked safely managed drinking water services, 3.5 billion lacked safely managed sanitation services, and 2.0 billion lacked basic hygiene services in 2022” (Water and Sanitation - United Nations Sustainable Development). Although access to water is a basic human right, the resources and supplies may not be publicly known, which can be a major barrier for those in need of them. Likewise, there are many capable people who could help donate these supplies or uncover services. However, many people are unaware of how they can assist in this issue.
