@@ -42,7 +42,7 @@ export default function Onboarding(props) {
                             <p className="title-desc">Navigate through any one of our offered opportunities!</p>
                         </div>
                         <div className="features-images">
-                            <img className="resource-icon" src="img/Drop.png" alt="waterdrop resource icon"/>
+                            <img className="resource-icon" src="/public/img/Drop.png" alt="waterdrop resource icon"/>
                             <img className="donation-icon" src="img/Smiley.png" alt="smile face donation icon"/>
                             <img className="education-icon" src="img/BookBookmark.png" alt="book education icon"/>
                         </div>
