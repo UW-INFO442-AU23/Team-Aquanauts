@@ -20,6 +20,7 @@ export default function ResourcePage(props) {
             field3={item.BASIN_NAME}
             key={temp}
         />
+        
       )
     } else { //searching a zipcode
       if (searchZip == item.ZIPCODE) {
