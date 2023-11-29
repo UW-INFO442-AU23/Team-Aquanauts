@@ -13,9 +13,6 @@ export function CardDetails(props) {
                 <h2>{props.LOC_TYPE}</h2>
                 <h2>{props.CITY}</h2>
             </div>
-            <div className="fav-button">
-                <button className="fav-location-button">Favorite this location!</button>
-            </div>
         </div>
     )
 }
