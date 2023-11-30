@@ -1,13 +1,13 @@
 import NavBar from '../NavBar.js';
 import {NavLink} from 'react-router-dom';
 
-const CardDetails = (props) => {
+const DonationCardDetails = (props) => {
 
     return (
         <div className="details-container">
             <NavBar />
             <div className="location-back-button">
-                <button className="back-button"><NavLink to="/resources">Back</NavLink></button>
+                <button className="back-button"><NavLink to="/donations">Back</NavLink></button>
             </div>
             <div className="location-name-text">
                 <h1 className="name-of-location">{props.Name}</h1>
@@ -28,4 +28,4 @@ const CardDetails = (props) => {
     )
 }
 
-export default CardDetails;
+export default DonationCardDetails;

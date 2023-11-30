@@ -1,6 +1,6 @@
 import React from 'react';
 import SearchBar from '../SearchBar.js';
-import { CardList } from '../CardList.js';
+import { ResourceCardList } from './ResourceCardList.js';
 import NavBar from '../NavBar.js';
 import { resourcesContent } from "../../data/filteredWaterResources.js";
 import { useRef, useState } from "react";
@@ -21,7 +21,7 @@ export default function ResourcePage(props) {
     temp = temp + 1;
     if (searchZip.length === 0) { //default
       return (
-        <CardList
+        <ResourceCardList
             title={item.CITY}
             field1={item.LOC_NAME}
             field2={item.ZIPCODE}
@@ -33,7 +33,7 @@ export default function ResourcePage(props) {
     } else { //searching a zipcode
       if (searchZip == item.ZIPCODE) {
         return (
-          <CardList
+          <ResourceCardList
               title={item.CITY}
               field1={item.LOC_NAME}
               field2={item.ZIPCODE}

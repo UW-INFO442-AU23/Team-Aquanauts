@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from '../NavBar.js';
 import DropSearch from './DropSearch.js';
 import { charityContent } from "../../data/waterCharities.js";
-import { CardList } from '../CardList.js';
+import { DonationCardList } from './DonationCardList.js';
 import { useState } from "react";
 
 export default function DonationPage(props) {
@@ -20,7 +20,7 @@ export default function DonationPage(props) {
 
   function cardMethod(name, statement, focus, website, key) {
     return (
-      <CardList
+      <DonationCardList
         title={name}
         field1={statement}
         field2={focus}

@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
+import NavBar from '../NavBar.js';
+import {NavLink} from 'react-router-dom';
 
-export function CardDetails(props) {
+export default function ResourceCardDetails(props) {
     const cardDetails = props.details;
 
     return (
         <div className="details-container">
+            <NavBar />
+            <div className="location-back-button">
+                <button className="back-button"><NavLink to="/resources">Back</NavLink></button>
+            </div>
             <div className="location-name-text">
                 <h1 className="name-of-location">{props.LOC_NAME}</h1>
             </div>
@@ -16,5 +22,3 @@ export function CardDetails(props) {
         </div>
     )
 }
-
-export default CardDetails;

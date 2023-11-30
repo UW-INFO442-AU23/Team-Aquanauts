@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export function CardList(props) {
+export function DonationCardList(props) {
 
     return (
         <div className="card-container">
-            <Link to="/location" className="card-link">
+            <Link to="/donation-details" className="card-link">
                 <div className="single-card-box">
                     <div className="card-text">
                         <h2 className="card-title">{props.title}</h2>
