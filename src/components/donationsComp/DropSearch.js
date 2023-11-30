@@ -1,7 +1,6 @@
 import React from 'react';
 const focuses = ['Wastewater', 'Water Quality', 'Water Access', 'Affordability', 'Infrastructure', 'Law & Policy', 'Technology Adv', 'Hygiene', 'Public Health'];
 const beneficiaries = ['Households', 'Implementing Organizations', 'Impacted Communities', 'Local & State Government', 'Unhoused Communities', 'Environment', 'Utilities', 'Schools', 'General Public', 'Federal Government', ''];
-let temp = 100000;
 
 export default function DropSearch(props) {
   let filterMessage = '';
@@ -22,16 +21,14 @@ export default function DropSearch(props) {
   let options = [];
   if (props.type === 'focuses') {
     options = focuses.map(item => {
-      temp = temp + 1;
       return (
-        <li><button key={temp} className="dropdown-item" onClick={update} >{item}</button></li>
+        <li key={item}><button className="dropdown-item" onClick={update} >{item}</button></li>
       );
     })
   } else {
     options = beneficiaries.map(item => {
-      temp = temp + 100
       return (
-        <li><button key={temp} className="dropdown-item" onClick={update} >{item}</button></li>
+        <li key={item}><button className="dropdown-item" onClick={update} >{item}</button></li>
       );
     })
   }

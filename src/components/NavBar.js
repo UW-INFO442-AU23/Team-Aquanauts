@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { 
-  BrowserRouter as Router, 
-  Link, 
+import {
+  BrowserRouter as Router,
+  Link,
   NavLink
 } from 'react-router-dom'
 import './../index.css'
@@ -27,9 +27,9 @@ const NavBar = () => {
         </div>
         <div className="nav-bar">
           <div className="nav-links">
-            <NavLink id="resource-link" to="/resources" style={{ textDecoration: 'none' }} activeClassName="active" onClick={() => handleNavLinkClick('resource-link')} onMouseEnter={() => handleNavLinkMouseEnter('resource-link')}>Resources</NavLink>
-            <NavLink id="donate-link" to="/donations" style={{ textDecoration: 'none' }} activeClassName="active" onClick={() => handleNavLinkClick('donation-link')} onMouseEnter={() => handleNavLinkMouseEnter('donate-link')}>Donate</NavLink>
-            <NavLink id="education-link" to="/education" style={{ textDecoration: 'none' }} activeClassName="active" onClick={() => handleNavLinkClick('education-link')} onMouseEnter={() => handleNavLinkMouseEnter('education-link')}>Education</NavLink>
+            <NavLink id="resource-link" to="/resources" style={{ textDecoration: 'none' }} activeclassname="active" onClick={() => handleNavLinkClick('resource-link')} onMouseEnter={() => handleNavLinkMouseEnter('resource-link')}>Resources</NavLink>
+            <NavLink id="donate-link" to="/donations" style={{ textDecoration: 'none' }} activeclassname="active" onClick={() => handleNavLinkClick('donation-link')} onMouseEnter={() => handleNavLinkMouseEnter('donate-link')}>Donate</NavLink>
+            <NavLink id="education-link" to="/education" style={{ textDecoration: 'none' }} activeclassname="active" onClick={() => handleNavLinkClick('education-link')} onMouseEnter={() => handleNavLinkMouseEnter('education-link')}>Education</NavLink>
           </div>
         </div>
       </div>
