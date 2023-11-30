@@ -23,25 +23,25 @@ export default function DonationPage(props) {
     }
 
     if (focus === '' && beneficiaries === '') { //default
-      return cardMethod(item.Name, item.Focus, item.Region, statement, item.Name);
+      return cardMethod(item.Name, item.Focus, item.Beneficiary, statement, item.Name);
     } else { //not default
       if (focus !== '' && beneficiaries !== '') { //filter by both
         if (item.Focus === focus && item.Beneficiary === beneficiaries) {
-          return cardMethod(item.Name, item.Focus, item.Region, statement, item.Name);
+          return cardMethod(item.Name, item.Focus, item.Beneficiary, statement, item.Name);
         }
       } else if (focus === '') { //filter beneficiaries only
-        if (item.Beneficiary === beneficiaries) { //filter by both
-          return cardMethod(item.Name, item.Focus, item.Region, statement, item.Name);
+        if (item.Beneficiary === beneficiaries) {
+          return cardMethod(item.Name, item.Focus, item.Beneficiary, statement, item.Name);
         }
       } else { //filter focuses only
-        if (item.Focus === focus) { //filter by both
-          if (item.Focus === focus && item.Beneficiary === beneficiaries) {
-            return cardMethod(item.Name, item.Focus, item.Region, statement, item.Name);
-          }
+        if (item.Focus === focus) {
+          return cardMethod(item.Name, item.Focus, item.Beneficiary, statement, item.Name);
         }
       }
     }
   })
+
+
 
   function cardMethod(name, statement, focus, website, key) {
     return (

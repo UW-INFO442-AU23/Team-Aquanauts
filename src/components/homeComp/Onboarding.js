@@ -23,7 +23,7 @@ export default function Onboarding(props) {
                                 water scarcity and hygiene as well as find free water resources and opportunities to donate to charities that share our
                                 goals.</p>
                             <div className="un-video">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/LCKsU4bPFOQ?si=xWd3xcz-l96bG57P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/LCKsU4bPFOQ?si=xWd3xcz-l96bG57P" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                             </div>
                         </div>
                         <h2 className="button-link-header-onboarding">What to get on board? Are you a...</h2>

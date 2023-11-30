@@ -1,21 +1,5 @@
 export const charityContent = [
  {
-   "Name": "",
-   "Website": "",
-   "Region": "",
-   "Entity": "",
-   "Mailing Address": "",
-   "HQ Address (Street Address)": "",
-   "Primary Contact, Title": "",
-   "Primary Contact Email": "",
-   "Primary Contact Phone": "",
-   "Mission Statement": "",
-   "Role in US WaSH Sector": "",
-   "Approach": "",
-   "Focus": "",
-   "Beneficiary": ""
- },
- {
    "Name": "Adult and Youth United Development Association, Inc. (AYUDA)",
    "Website": "https://ayudaorg1.wixsite.com/ayuda",
    "Region": "Southwest",
@@ -319,7 +303,7 @@ export const charityContent = [
    "Focus": "Wastewater",
    "Beneficiary": "Impacted Communities"
  },
- { 
+ {
    "Name": "Clean Water Action",
    "Website": "https://www.cleanwateraction.org/",
    "Region": "New England",
@@ -367,7 +351,7 @@ export const charityContent = [
    "Focus": "Water Access",
    "Beneficiary": "Implementing Organizations"
  },
- { 
+ {
    "Name": "Clean Water for North Carolina",
    "Website": "https://cwfnc.org/",
    "Region": "Southeast",
@@ -415,7 +399,7 @@ export const charityContent = [
    "Focus": "Wastewater",
    "Beneficiary": "Households"
  },
- { 
+ {
    "Name": "Columbia University, Human Rights Institute",
    "Website": "https://web.law.columbia.edu/human-rights-institute",
    "Region": "Southeast",
@@ -559,7 +543,7 @@ export const charityContent = [
    "Focus": "Infrastructure",
    "Beneficiary": "Implementing Organizations"
  },
- { 
+ {
    "Name": "Duke University, Nicholas Institute for Environmental Policy Solutions",
    "Website": "https://nicholasinstitute.duke.edu/",
    "Region": "Nationwide",
@@ -575,7 +559,7 @@ export const charityContent = [
    "Focus": "Technology Adv",
    "Beneficiary": "Local & State Government"
  },
- { 
+ {
    "Name": "Earthjustice",
    "Website": "earthjustice.org",
    "Region": "Nationwide",
@@ -639,7 +623,7 @@ export const charityContent = [
    "Focus": "Wastewater",
    "Beneficiary": "Impacted Communities"
  },
- { 
+ {
    "Name": "Environmental Finance Center Network (EFCN)",
    "Website": "https://efcnetwork.org/",
    "Region": "U.S. Territories",
@@ -831,7 +815,7 @@ export const charityContent = [
    "Focus": "Wastewater",
    "Beneficiary": "Local & State Government"
  },
- { 
+ {
    "Name": "Food & Water Watch",
    "Website": "https://www.fooda ndwaterwatch.org / U.S. Territories Tribal Land",
    "Region": "U.S. Territories",
