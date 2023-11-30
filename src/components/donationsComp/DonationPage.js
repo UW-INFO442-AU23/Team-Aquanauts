@@ -8,11 +8,26 @@ import { useState } from "react";
 export default function DonationPage(props) {
   const [focus, setFocus] = useState('');
   const [beneficiaries, setBeneficiaries] = useState('');
+  const [minIndex, setMinIndex] = useState(0);
+  const [maxIndex, setMaxIndex] = useState(25);
+  let total = 0;
 
   function getWordCount(str) {
     return str.split(' ')
       .filter(function(n) { return n != '' })
       .length;
+  }
+
+  function cardMethod(name, statement, focus, website, key) {
+    return (
+      <CardList
+        title={name}
+        field1={statement}
+        field2={focus}
+        field3={website}
+        key={key}
+      />
+    );
   }
 
   const cards = charityContent.map(item => {
@@ -41,18 +56,27 @@ export default function DonationPage(props) {
     }
   })
 
+  const updatedCards = cards.filter(function (item) {
+      return item !== undefined;
+  });
+  total = updatedCards.length;
 
+  function forward() {
+    if (!((minIndex+25) > maxIndex)) {
+      setMinIndex(maxIndex);
+    }
+    if ((maxIndex+25) > total) {
+      setMaxIndex(total)
+    } else {
+      setMaxIndex(maxIndex + 25);
+    }
+  }
 
-  function cardMethod(name, statement, focus, website, key) {
-    return (
-      <CardList
-        title={name}
-        field1={statement}
-        field2={focus}
-        field3={website}
-        key={key}
-      />
-    );
+  function backward() {
+    if (!((minIndex-25) < 0)) {
+      setMaxIndex(minIndex);
+      setMinIndex(minIndex-25);
+    }
   }
 
   return (
@@ -66,8 +90,11 @@ export default function DonationPage(props) {
         <DropSearch setBeneficiaries={setBeneficiaries} type='beneficiaries' />
 
         <div className="card-list">
-          {cards}
+          {updatedCards.slice(minIndex, maxIndex)}
         </div>
+        <p>displaying cards {minIndex + 1} to {maxIndex} of {updatedCards.length}</p>
+        <button onClick={backward}>Previous 25</button>
+        <button onClick={forward} >Next 25</button>
       </main>
     </div>
   )
