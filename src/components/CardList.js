@@ -14,7 +14,7 @@ export function CardList(props) {
                         <h2 className='card-basin-name'>{props.field3}</h2>
                     </div>
                     <div className="card-image-box">
-                        <img src="img/empty.png" alt="test image" className="card-image" />
+                        <img src={props.img} alt="test image" className="card-image" />
                     </div>
                 </div>
             </Link>

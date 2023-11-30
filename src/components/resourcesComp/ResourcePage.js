@@ -5,6 +5,7 @@ import NavBar from '../NavBar.js';
 import { resourcesContent } from "../../data/filteredWaterResources.js";
 import { useRef, useState } from "react";
 let temp = 0;
+const BASIN_IMG = {'LGRW': 'img path', 'LWHR': 'img path'}
 
 export default function ResourcePage(props) {
   const [searchZip, setSearchZip] = useState('');
@@ -19,8 +20,9 @@ export default function ResourcePage(props) {
             field2={item.ZIPCODE}
             field3={item.BASIN_NAME}
             key={temp}
+            img={BASIN_IMG[item.BASIN_ID]}
         />
-        
+
       )
     } else { //searching a zipcode
       if (searchZip == item.ZIPCODE) {
@@ -31,6 +33,7 @@ export default function ResourcePage(props) {
               field2={item.ZIPCODE}
               field3={item.BASIN_NAME}
               key={temp}
+              img={BASIN_IMG[item.BASIN_ID]}
           />
         )
       }
@@ -50,7 +53,7 @@ export default function ResourcePage(props) {
           </div>
           <SearchBar setZipcode={setSearchZip} />
         </div>
-        
+
 
         <div className="card-list">
           {cards}
