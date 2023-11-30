@@ -7,7 +7,7 @@ import { useRef, useState } from "react";
 let temp = 0;
 const BASIN_IMG = {
   'South King County': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/south-king-gwma.jpeg?raw=true",
-  'Other': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/bear-creek.jpeg?raw=true",
+  'Other': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/bear-creek.jpeg?raw=true", /* probably find a better image for 'Other' */
   'East King County': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/east-king-county-gwma.jpeg?raw=true",
   'Issaquah Creek Valley': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/issaquah-valley-gwma.jpeg?raw=true",
   'Vashon-Maury Island': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/vashon-maury-gwma.jpeg?raw=true",
