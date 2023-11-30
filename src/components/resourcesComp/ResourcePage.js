@@ -5,7 +5,14 @@ import NavBar from '../NavBar.js';
 import { resourcesContent } from "../../data/filteredWaterResources.js";
 import { useRef, useState } from "react";
 let temp = 0;
-const BASIN_IMG = {'LGRW': 'img path', 'LWHR': 'img path'}
+const BASIN_IMG = {
+  'South King County': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/Smiley.png?raw=true",
+  'East King County': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/Drop.png?raw=true",
+  'Issaquah Creek Valley': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/harbor-activity.jpg?raw=true",
+  'Vashon-Maury Island': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/water-burst.jpg?raw=true",
+  "Redmond-Bear Creek Valley": "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/cat.png?raw=true",
+  "Other": "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/empty.png?raw=true"
+}
 
 export default function ResourcePage(props) {
   const [searchZip, setSearchZip] = useState('');
@@ -20,9 +27,8 @@ export default function ResourcePage(props) {
             field2={item.ZIPCODE}
             field3={item.BASIN_NAME}
             key={temp}
-            img={BASIN_IMG[item.BASIN_ID]}
+            img={BASIN_IMG[item.GWMA]}
         />
-
       )
     } else { //searching a zipcode
       if (searchZip == item.ZIPCODE) {
@@ -33,7 +39,7 @@ export default function ResourcePage(props) {
               field2={item.ZIPCODE}
               field3={item.BASIN_NAME}
               key={temp}
-              img={BASIN_IMG[item.BASIN_ID]}
+              img={BASIN_IMG[item.GWMA]}
           />
         )
       }
@@ -53,7 +59,6 @@ export default function ResourcePage(props) {
           </div>
           <SearchBar setZipcode={setSearchZip} />
         </div>
-
 
         <div className="card-list">
           {cards}
