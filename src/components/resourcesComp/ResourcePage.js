@@ -6,12 +6,12 @@ import { resourcesContent } from "../../data/filteredWaterResources.js";
 import { useRef, useState } from "react";
 let temp = 0;
 const BASIN_IMG = {
-  'South King County': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/Smiley.png?raw=true",
-  'East King County': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/Drop.png?raw=true",
-  'Issaquah Creek Valley': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/harbor-activity.jpg?raw=true",
-  'Vashon-Maury Island': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/water-burst.jpg?raw=true",
-  "Redmond-Bear Creek Valley": "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/cat.png?raw=true",
-  "Other": "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/empty.png?raw=true"
+  'South King County': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/green-river-trail.jpeg?raw=true",
+  'East King County': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/green-river-trail.jpeg?raw=true",
+  'Issaquah Creek Valley': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/green-river-trail.jpeg?raw=true",
+  'Vashon-Maury Island': "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/green-river-trail.jpeg?raw=true",
+  "Redmond-Bear Creek Valley": "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/green-river-trail.jpeg?raw=true",
+  "Other": "https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/green-river-trail.jpeg?raw=true"
 }
 
 export default function ResourcePage(props) {
