@@ -4,19 +4,31 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { useParams } from 'react-router';
 import { resourcesContent } from "../../data/filteredWaterResources.js";
 
+function redirectToGoogleMaps(latitude, longitude) {
+    var mapsUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
+    window.open(mapsUrl, '_blank');
+}
+
 
 export default function ResourceCardDetails(props) {
     const cardDetails = props.details;
     const urlParams = useParams();
 
-    let locationName = "it is not working";
+    let locationName = "";
+    let latitude = "";
+    let longitude = "";
 
-    //this is not working
-    const resourceDetails = resourcesContent.map((item) => {
-        if(item.LOC_NAME == urlParams.field1) {
-            locationName = item.LOC_NAME;
+    resourcesContent.map((item) => {
+        if(item.LOC_NAME == urlParams.cardId) {
+            locationName = urlParams.cardId;
+            latitude = item.Y;
+            longitude = item.X;
         }
     })
+
+    const handleFindLocationClick = () => {
+        redirectToGoogleMaps(latitude, longitude);
+    }
 
 
     return (
@@ -30,8 +42,13 @@ export default function ResourceCardDetails(props) {
             </div>
             <div className="details-image-box">
                 <h2>{locationName}</h2>
-                
+            </div>
+            <div className="details-info">
+                <button id="find-location-button" onClick={handleFindLocationClick}>Find Location on Maps!</button>
             </div>
         </div>
     )
 }
+
+//basin name
+//

@@ -4,7 +4,7 @@ import { resourcesContent } from "../../data/filteredWaterResources.js";
 
 export function ResourceCardList(props) {
 
-    const data = { resourcesContent };
+    const location = props.field1;
 
     return (
         <div className="card-container">
