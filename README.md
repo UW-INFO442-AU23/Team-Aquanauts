@@ -37,17 +37,16 @@ P2 - Nice to have
 - Education page (stats within King County, link to other outside sources)
 
 
-**Start Local Host**
+**Start Local Host:**
 In order to run the application, start by installing npm packages to rurn. 
 
-'npm install' 
+`npm install`
 
-'npm start'
+`npm start`
 
-'Ctrl + c' to cancel 
+`Ctrl + c` to cancel 
 
-**References**
-
+**References:**
 Icon images and data used in our website were from the following sources:
 
 Icon Images from https://github.com/coiger/fill-water-animation
