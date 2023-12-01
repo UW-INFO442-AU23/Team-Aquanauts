@@ -381,12 +381,11 @@
 }
 
 
-/* CardDetails.js */
+/* card details page */
 .name-of-location {
     position: relative;
-    width: 420px;
     height: 52px;
-    left: 160px;
+    left: 135px;
     top: 50px;
     font-weight: 400;
     font-size: 40px;
@@ -406,6 +405,10 @@
     border-radius: 10px;
 }
 
+.details-info {
+    
+}
+
 .details-image-box {
     position: relative;
     display: flex;
@@ -415,6 +418,7 @@
     height: 377px;
 }
 
+/* need to implement back */
 .details-image-backbox {
     position: relative;
     width: 381px;
@@ -452,6 +456,11 @@
     color: #ECF9F9;
     background-color: #1D767B;
     border-radius: 10px;
+}
+
+.details-text {
+
+
 }
 
 /*

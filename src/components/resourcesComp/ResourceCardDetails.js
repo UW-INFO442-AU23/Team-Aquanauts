@@ -49,24 +49,30 @@ export default function ResourceCardDetails(props) {
 
 
     return (
-        <div className="details-container">
+        <div className="details-page">
             <NavBar />
-            <div className="location-back-button">
-                <button className="back-button"><NavLink to="/resources">Back</NavLink></button>
-            </div>
-            <div className="location-name-text">
-                <h1 className="name-of-location">{locationName}</h1>
-            </div>
-            <div className="details-image-box">
-                <img src={basinImg} alt="test image" className="details-image" />
-            </div>
-            <div className="details-info">
-                <p>Type of Basin: {basin}</p>
-                <p>Location Zip Code: {zipCode}</p>
-                <p>Type of Resource: {locType}</p>
-            </div>
-            <div className="google-maps-button">
-                <button id="find-location-button" onClick={handleFindLocationClick}>Find Location on Maps!</button>
+            <div className="details-container">
+                <div className="location-back-button">
+                    <button className="back-button"><NavLink to="/resources">Back</NavLink></button>
+                </div>
+                <div className="location-name-text">
+                    <h1 className="name-of-location">{locationName}</h1>
+                </div>
+                <div className="details-info">
+                    <div className="details-image-box">
+                        <img src={basinImg} alt="test image" className="details-image" />
+                    </div>
+                    <div className="details-text">
+                        <p>Type of Basin: {basin}</p>
+                        <p>Location Zip Code: {zipCode}</p>
+                        <p>Type of Resource: {locType}</p>
+                    </div>
+                    <div className="google-maps-button">
+                        <button id="find-location-button" onClick={handleFindLocationClick}>Find Location on Maps!</button>
+                        <p>(This will redirect you to Google Maps)</p>
+                    </div>
+                </div>
+                
             </div>
         </div>
     )
