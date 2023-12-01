@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { resourcesContent } from "../../data/filteredWaterResources.js";
 
 export function ResourceCardList(props) {
 
+    const data = { resourcesContent };
+
     return (
         <div className="card-container">
-            <Link to="/resource-details" className="card-link">
+            <Link to={`/resource-details/${data.LOC_NAME}`} className="card-link">
                 <div className="single-card-box">
                     <div className="card-text">
                         <h2 className="card-title">{props.title}</h2>

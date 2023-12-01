@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import NavBar from '../NavBar.js';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function ResourceCardDetails(props) {
     const cardDetails = props.details;
+    const { LOC_NAME } = props.match.params;
 
     return (
         <div className="details-container">
@@ -15,9 +16,9 @@ export default function ResourceCardDetails(props) {
                 <h1 className="name-of-location">{props.LOC_NAME}</h1>
             </div>
             <div className="details-image-box">
-                <h2>{props.BASIN_NAME}</h2>
-                <h2>{props.LOC_TYPE}</h2>
-                <h2>{props.CITY}</h2>
+                <h2>{cardDetails.LOC_NAME}</h2>
+                <h2>{cardDetails.LOC_TYPE}</h2>
+                <h2>{cardDetails.CITY}</h2>
             </div>
         </div>
     )
