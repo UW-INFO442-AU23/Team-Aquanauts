@@ -8,7 +8,7 @@ export function ResourceCardList(props) {
 
     return (
         <div className="card-container">
-            <Link to={`/resource-details/${data.LOC_NAME}`} className="card-link">
+            <Link to={`/resource-details/${props.field1}`} className="card-link">
                 <div className="single-card-box">
                     <div className="card-text">
                         <h2 className="card-title">{props.title}</h2>

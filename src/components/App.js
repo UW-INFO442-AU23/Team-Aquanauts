@@ -17,6 +17,11 @@ import DonationCardDetailsPage from "./donationsComp/DonationCardDetails.js";
 import Onboarding from './homeComp/Onboarding.js';
 import { render } from '@testing-library/react';
 
+function CardDetails() {
+  let { cardId } = useParams();
+}
+
+
 class App extends Component {
   render() {
     return (
@@ -27,8 +32,8 @@ class App extends Component {
             <Route path="resources" element={<ResourcePage />} />
             <Route path="donations" element={<DonationPage />} />
             <Route path="education" element={<EducationPage />} />
-            <Route path="resource-details" element={<ResourceCardDetailsPage />} />
-            <Route path="donation-details" element={<DonationCardDetailsPage />} />
+            <Route path="resource-details/:cardId" element={<ResourceCardDetailsPage />} />
+            <Route path="donation-details/:cardId" element={<DonationCardDetailsPage />} />
             <Route path='*' element={<Navigate to='/' />} />
           </Routes>
       </Router>

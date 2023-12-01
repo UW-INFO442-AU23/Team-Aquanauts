@@ -1,8 +1,9 @@
 import NavBar from '../NavBar.js';
 import {NavLink} from 'react-router-dom';
+import { useParams } from 'react-router';
 
 const DonationCardDetails = (props) => {
-
+    
     return (
         <div className="details-container">
             <NavBar />
