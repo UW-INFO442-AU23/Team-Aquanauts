@@ -53,7 +53,7 @@ export default function ResourceCardDetails(props) {
             <NavBar />
             <div className="details-container">
                 <div className="location-back-button">
-                    <button className="back-button"><NavLink to="/resources">Back</NavLink></button>
+                    <button className="back-button"><NavLink to="/resources" className="navlink-back">Back</NavLink></button>
                 </div>
                 <div className="location-name-text">
                     <h1 className="name-of-location">{locationName}</h1>
@@ -67,16 +67,12 @@ export default function ResourceCardDetails(props) {
                         <p>Location Zip Code: {zipCode}</p>
                         <p>Type of Resource: {locType}</p>
                     </div>
-                    <div className="google-maps-button">
-                        <button id="find-location-button" onClick={handleFindLocationClick}>Find Location on Maps!</button>
-                        <p>(This will redirect you to Google Maps)</p>
-                    </div>
                 </div>
-                
+                <div className="google-maps-button">
+                    <button id="details-button" onClick={handleFindLocationClick}>Find Location on Maps!</button>
+                    <p className="redirect-text">(This will redirect you to Google Maps)</p>
+                </div>
             </div>
         </div>
     )
 }
-
-//basin name
-//

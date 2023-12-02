@@ -28,7 +28,7 @@ export default function ResourcePage(props) {
             title={item.CITY}
             field1={item.LOC_NAME}
             field2={item.ZIPCODE}
-            field3={item.BASIN_NAME}
+            field3={item.LOC_TYPE}
             key={temp}
             img={BASIN_IMG[item.GWMA]}
         />
@@ -40,7 +40,7 @@ export default function ResourcePage(props) {
               title={item.CITY}
               field1={item.LOC_NAME}
               field2={item.ZIPCODE}
-              field3={item.BASIN_NAME}
+              field3={item.LOC_TYPE}
               key={temp}
               img={BASIN_IMG[item.GWMA]}
           />

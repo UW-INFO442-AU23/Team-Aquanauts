@@ -10,7 +10,7 @@
     margin-right: 15px;
 }
 
-.background-page, .details-container {
+.background-page {
     background-image: linear-gradient(to bottom right, rgba(194, 237, 239), rgba(238, 249, 250));
     height: 100%;
 }
@@ -127,6 +127,18 @@
     height: 452.89px;
     border-radius: 10px;
     background-color: #66AEB2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    top: 0;
+    transition: top ease 0.5s, background-color ease 0.5s;
+}
+
+.single-card-box:hover {
+    top: -10px;
+    background-color: #74C7CC;
+}
+
+.card-link {
+    color: #ECF9F9 !important;
 }
 
 .card-title {
@@ -138,7 +150,8 @@
     font-size: 26px;
     line-height: 39px;
     text-align: center;
-    color: #ECF9F9;
+    text-decoration: underline;
+    font-size: 30px;
 }
 
 .card-city {
@@ -170,7 +183,6 @@
     height: 150px;
     border-radius: 5px;
 }
-
 
 /* Onboarding.js */
 .background-onboarding {
@@ -381,42 +393,81 @@
 }
 
 
-/* card details page */
-.name-of-location {
-    position: relative;
-    height: 52px;
-    left: 135px;
-    top: 50px;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 60px;
 
-    color: #024343;
+/* card details page */
+.details-page {
+    background-image: linear-gradient(to bottom right, rgba(194, 237, 239), rgba(238, 249, 250));
+    height: 100%;
+    min-height: 100%;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.location-back-button {
+    display: flex;
+    text-align: center;
+    margin-left: 66px;
+    margin-top: 40px;
 }
 
 .back-button {
-    position: relative;
     width: 68px;
     height: 35px;
-    left: 50px;
-    top: 30px;
-    color: #ECF9F9;
     background-color: #66AEB2;
     border-radius: 10px;
 }
 
+.navlink-back {
+    color: #ECF9F9;
+    text-decoration: none;
+}
+
+.name-of-location {
+    display: flex;
+    height: 52px;
+    margin-left: 135px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    color: #024343;
+}
+
 .details-info {
-    
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .details-image-box {
-    position: relative;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     width: 407px;
     height: 377px;
+    margin-left: 134px;
+    margin-top: 15px;
+    overflow: auto;
+    overflow-wrap: anywhere;
 }
+
+.details-image {
+    width: 391px;
+    height: 359px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.details-text {
+    flex-direction: column;
+    color: #024343;
+    margin-left: 40px;
+    margin-top: 60px;
+    font-size: 30px;
+}
+
 
 /* need to implement back */
 .details-image-backbox {
@@ -437,15 +488,27 @@
 
 }
 
-.details-image {
-    position: absolute;
-    width: 391px;
-    height: 359px;
-    left: 134px;
-    top: 71px;
-    z-index: 1;
-    border-radius: 10px;
+.google-maps-button {
+    margin-left: 184px;
+    margin-top: 20px;
+    
 }
+
+#details-button {
+    width: 291px;
+    height: 52px;
+    color: #ECF9F9;
+    background-color: #1D767B;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.redirect-text {
+    padding-top: 10px;
+    color: #024343;
+    padding-left: 11px;
+}
+
 
 .fav-location-button {
     position: relative;
@@ -458,10 +521,9 @@
     border-radius: 10px;
 }
 
-.details-text {
 
 
-}
+
 
 /*
 flip card
