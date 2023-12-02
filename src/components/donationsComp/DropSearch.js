@@ -11,6 +11,8 @@ export default function DropSearch(props) {
   }
 
   function update(event) {
+    props.setMin(0);
+    props.setMax(25);
     if (props.type === "focuses") {
       props.setFocus(event.target.textContent);
     } else {

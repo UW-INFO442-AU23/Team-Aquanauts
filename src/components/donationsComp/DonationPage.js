@@ -60,6 +60,9 @@ export default function DonationPage(props) {
       return item !== undefined;
   });
   total = updatedCards.length;
+  if (total < maxIndex) {
+    setMaxIndex(total);
+  }
 
   function forward() {
     if (!((minIndex+25) > maxIndex)) {
@@ -86,8 +89,8 @@ export default function DonationPage(props) {
         <h1>Donation Page</h1>
       </header>
       <main>
-        <DropSearch setFocus={setFocus} type='focuses' />
-        <DropSearch setBeneficiaries={setBeneficiaries} type='beneficiaries' />
+        <DropSearch setFocus={setFocus} type='focuses' setMin={setMinIndex} setMax={setMaxIndex} />
+        <DropSearch setBeneficiaries={setBeneficiaries} type='beneficiaries' setMin={setMinIndex} setMax={setMaxIndex} />
 
         <div className="card-list">
           {updatedCards.slice(minIndex, maxIndex)}

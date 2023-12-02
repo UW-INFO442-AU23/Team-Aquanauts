@@ -21,6 +21,8 @@ export default function SearchBar(props) {
   }
 
   const handleSearch = (event) => {
+    props.setMin(0);
+    props.setMax(25);
     let queryString = query.toString();
     checkLengthAndFormat(queryString);
   }

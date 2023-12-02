@@ -16,6 +16,9 @@ const BASIN_IMG = {
 
 export default function ResourcePage(props) {
   const [searchZip, setSearchZip] = useState('');
+  const [minIndex, setMinIndex] = useState(0);
+  const [maxIndex, setMaxIndex] = useState(25);
+  let total = 0;
 
   const cards = resourcesContent.map(item => {
     temp = temp + 1;
@@ -46,6 +49,32 @@ export default function ResourcePage(props) {
     }
   })
 
+  const updatedCards = cards.filter(function (item) {
+    return item !== undefined;
+});
+total = updatedCards.length;
+if (total < maxIndex) {
+  setMaxIndex(total);
+}
+
+function forward() {
+  if (!((minIndex+25) > maxIndex)) {
+    setMinIndex(maxIndex);
+  }
+  if ((maxIndex+25) > total) {
+    setMaxIndex(total)
+  } else {
+    setMaxIndex(maxIndex + 25);
+  }
+}
+
+function backward() {
+  if (!((minIndex-25) < 0)) {
+    setMaxIndex(minIndex);
+    setMinIndex(minIndex-25);
+  }
+}
+
   return (
     <div className="background-page">
       <NavBar />
@@ -57,13 +86,15 @@ export default function ResourcePage(props) {
           <div className="search-title">
             <p>Search by zipcode!</p>
           </div>
-          <SearchBar setZipcode={setSearchZip} />
+          <SearchBar setZipcode={setSearchZip} setMin={setMinIndex} setMax={setMaxIndex} />
         </div>
 
         <div className="card-list">
-          {cards}
+        {updatedCards.slice(minIndex, maxIndex)}
         </div>
-
+        <p>displaying cards {minIndex + 1} to {maxIndex} of {updatedCards.length}</p>
+        <button onClick={backward}>Previous 25</button>
+        <button onClick={forward} >Next 25</button>
       </main>
     </div>
   )
