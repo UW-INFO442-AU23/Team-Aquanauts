@@ -552,6 +552,10 @@ Education page flip cards and stylings
     top: 0;
   }
 
+  .card-front, .card-back{
+    background-color: #024343;
+  }
+
   .card-flip:hover .card-front {
     transform: rotateY(-180deg);
   }
