@@ -44,14 +44,13 @@ const DonationCardDetails = (props) => {
                 <h1 className="name-of-location">{name}</h1>
             </div>
             <div className="details-text">
-                <p>{focus}</p>
-                <p>{statement}</p>
-                <p>{beneficiary}</p>
-                <p>{website}</p>
+                <p> <span class="bolded"> Focus Area:</span> {focus}</p>
+                <p> <span class="bolded"> Mission Statement:</span> {statement}</p>
+                <p> <span class="bolded"> Beneficiary:</span> {beneficiary}</p>
             </div>
             <div className="fav-button">
             <a href={website}>
-                <button className="fav-location-button" onClick={handleDonateNowClick}>Donate Now!</button>
+                <button className="fav-location-button" onClick={handleDonateNowClick}> Check Website & Donate Now!</button>
             </a>
             </div>
         </div>

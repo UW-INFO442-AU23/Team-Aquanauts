@@ -15,9 +15,9 @@ export function DonationCardList(props) {
                         <h2 className='card-focus'>{props.field2}</h2>
                         <h2 className='card-website'>{props.field3}</h2>
                     </div>
-                    <div className="card-image-box">
+                    {/* <div className="card-image-box">
                         <img src={props.img} alt="test image" className="card-image" />
-                    </div>
+                    </div> */}
                 </div>
             </Link>
         </div>

@@ -468,6 +468,10 @@
     font-size: 30px;
 }
 
+.bolded { 
+    font-weight: bold; 
+    color: black;
+}
 
 /* need to implement back */
 .details-image-backbox {

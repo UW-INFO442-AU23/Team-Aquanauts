@@ -25,11 +25,11 @@ export const charityContent = [
    "Primary Contact, Title": "Natasha Udu-gama, Director",
    "Primary Contact Email": "nudu-gama@agu.org",
    "Primary Contact Phone": "",
-   "Mission Statement": "Thriving Earth Exchange str…",
+   "Mission Statement": "Thriving Earth Exchange strengthens and enhances collaboration among communities, scientists, and partner organizations so that all communities can build healthy, resilient, thriving, just, and ecologically responsible futures.",
    "Role in US WaSH Sector": "We connect communities of all t…",
    "Approach": "Capacity Building & Education",
    "Focus": "Wastewater",
-   "Beneficiary": ""
+   "Beneficiary": "No Data"
  },
  {
    "Name": "Alaska Department of Environmental Conservation, Division of Water, Village Safe Water",
@@ -77,7 +77,7 @@ export const charityContent = [
    "Role in US WaSH Sector": "The Alliance for the Great Lakes …",
    "Approach": "Policy Advocacy",
    "Focus": "Wastewater",
-   "Beneficiary": ""
+   "Beneficiary": "No Data"
  },
  {
    "Name": "Altarum",

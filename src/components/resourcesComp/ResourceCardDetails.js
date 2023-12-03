@@ -65,10 +65,10 @@ export default function ResourceCardDetails(props) {
                         <img src={basinImg} alt="test image" className="details-image" />
                     </div>
                     <div className="details-text">
-                        <p>Type of Basin: {basin}</p>
-                        <p>Location Zip Code: {zipCode}</p>
-                        <p>Type of Resource: {locType}</p>
-                        <p>Ground Water Management Area: {gwma}</p>
+                        <p> <span class="bolded"> Type of Basin:</span> {basin}</p>
+                        <p> <span class="bolded"> Location Zip Code:</span> {zipCode}</p>
+                        <p> <span class="bolded"> Type of Resource:</span> {locType}</p>
+                        <p> <span class="bolded"> Ground Water Management Area:</span> {gwma}</p>
                     </div>
                 </div>
                 <div className="google-maps-button">
