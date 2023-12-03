@@ -31,7 +31,7 @@ export default function EducationPage(props) {
                                           click the button to head to Seattle Public Utilities on for
                                           an in-depth look at the processes involved in getting clean water in central
                                           King County.</p>
-                    <a href="https://www.seattle.gov/utilities/your-services/water/water-system" className="btn btn-outline-primary">Click me!</a>
+                    <a href="https://www.seattle.gov/utilities/your-services/water/water-system" target="_blank" className="btn btn-outline-primary">Click me!</a>
                   </div>
                 </div>
               </div>
@@ -53,7 +53,7 @@ export default function EducationPage(props) {
                     <p className="card-text">Despite King County having some of the cleanest water from it's watersheds,
                                           there are still some common water quality problems within the county that.
                                           Click the link button to read about some of the problems that plague the water in King County.</p>
-                    <a href="https://www.culligan.com/blog/featured-article/seattle-water-quality-facts-and-drinking-water-problems" className="btn btn-outline-primary">Click Me!</a>
+                    <a href="https://www.culligan.com/blog/featured-article/seattle-water-quality-facts-and-drinking-water-problems" target="_blank" className="btn btn-outline-primary">Click Me!</a>
                   </div>
                 </div>
               </div>
@@ -75,7 +75,7 @@ export default function EducationPage(props) {
                     <p className="card-text">Water Sanitation within King County is handeled within their wastewater services.
                       There are many water treatment plants that serve the area since the year of 1956. Click the button to head to
                       King County's Wastewater Services page to learn even more.</p>
-                    <a href="https://kingcounty.gov/en/legacy/services/environment/wastewater.aspx" className="btn btn-outline-primary">Click Me!</a>
+                    <a href="https://kingcounty.gov/en/legacy/services/environment/wastewater.aspx" target="_blank" className="btn btn-outline-primary">Click Me!</a>
                   </div>
                 </div>
               </div>
@@ -98,7 +98,7 @@ export default function EducationPage(props) {
                                         you can use? A lot of them are found within public libraries and parks within the area
                                         of Seattle. Click the button for a map detaling the facilities in the Seattle Area.</p>
                     <a href="https://kingcountyschoolhealthdotcom.wordpress.com/2018/04/06/free-restrooms-showers-and-laundry-facilities-in-seattle/" 
-                      className="btn btn-outline-primary">Click Me!</a>
+                      target="_blank" className="btn btn-outline-primary">Click Me!</a>
                   </div>
                 </div>
               </div>
@@ -119,7 +119,8 @@ export default function EducationPage(props) {
                     <h3 className="flip-card-title">Facts</h3>
                     <p className="card-text">Even though King County is surrounded by water all around there the area has run into times
                                         where it must save water due to droughts and other climatic events.</p>
-                    <a href="https://www.seattle.gov/utilities/protecting-our-environment/sustainability-tips/conserve-water" className="btn btn-outline-primary">Click Me!</a>
+                    <a href="https://www.seattle.gov/utilities/protecting-our-environment/sustainability-tips/conserve-water" 
+                    target="_blank" className="btn btn-outline-primary">Click Me!</a>
                   </div>
                 </div>
               </div>
@@ -138,8 +139,11 @@ export default function EducationPage(props) {
                 <div className="card-back bg-dark text-white">
                   <div className="card-body">
                     <h3 className="flip-card-title">Facts</h3>
-                    <p className="card-text">Place holder for King County Water Usage information</p>
-                    <a href="#" className="btn btn-outline-primary">Click Me!</a>
+                    <p className="card-text">King County uses recycled water for environmental projects, farms,
+                        and even on sports fields. Click the link below to see how recycled water helps the people and environment 
+                        in King County. </p>
+                    <a href="https://kingcounty.gov/en/dept/dnrp/waste-services/wastewater-treatment/resource-recovery/recycled-water/water-uses" 
+                    target="_blank" className="btn btn-outline-primary">Click Me!</a>
                   </div>
                 </div>
               </div>
