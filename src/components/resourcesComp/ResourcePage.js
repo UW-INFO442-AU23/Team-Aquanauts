@@ -79,7 +79,8 @@ function backward() {
     <div className="background-page">
       <NavBar />
       <header className="page-title">
-        <h1>Resource Page</h1>
+        <h1 className="page-header">Resource Page</h1>
+        <p className="page-desc">Find your nearest resource location!</p>
       </header>
       <main>
         <div className="search-bar">

@@ -86,9 +86,18 @@
 }
 
 .page-title {
-    color: #024343;
     text-align: center;
-    padding: 40px 0px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.page-header {
+    color: #024343;
+}
+
+.page-desc {
+    color: #1D767B;
+    font-size: 25px;
 }
 
 .search-bar {
@@ -662,13 +671,18 @@ Education page flip cards and stylings
     transform: rotateY(0deg);
 }
 
-.ed-intro-text, .ed-intro-heading {
+.ed-intro-heading {
     text-align: center;
-    color: #024343;
-    font-weight: 400;
+    color: #1D767B;
     font-size: 25px;
-    line-height: 90px;
-    text-align: center
+    font-weight: 400;
+    text-align: center;
+}
+
+.ed-intro-text {
+    color: #024343;
+    font-size: 19px;
+    padding: 20px;
 }
 
 /* search bar */

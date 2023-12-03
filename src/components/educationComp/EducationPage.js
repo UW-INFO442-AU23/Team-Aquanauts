@@ -8,7 +8,7 @@ export default function EducationPage(props) {
     <div className="background-page">
       <NavBar />
       <header className="page-title">
-        <h1>Education Page</h1>
+        <h1 className="page-header">Education Page</h1>
       </header>
       <main>
         <div className="container">
@@ -17,7 +17,7 @@ export default function EducationPage(props) {
         <div className='flex-container'>
           <div className='education-intro'>
             <h2 className='ed-intro-heading'>Welcome to the Education Page of the Aquapod!</h2>
-            <p ed-intro-text>
+            <p className='ed-intro-text'>
               The Aquapod's education page provides user with common information and issues with the water in the King County area.
               To learn more about specific topics hover over the cards on your personal computer or tap/click on a mobile device to view 
               key information located on the flip side of each card. Lastly, each information card has a button on the back that links to 

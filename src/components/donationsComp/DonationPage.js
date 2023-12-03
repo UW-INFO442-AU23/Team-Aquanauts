@@ -85,7 +85,8 @@ export default function DonationPage(props) {
     <div className="background-page">
       <NavBar />
       <header className="page-title">
-        <h1>Donation Page</h1>
+        <h1 className="page-header">Donation Page</h1>
+        <p className="page-desc">Find your next donation contribution!</p>
       </header>
       <main>
         <div className="dropdown-title">
