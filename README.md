@@ -39,13 +39,10 @@ P2 - Nice to have
 |               | **Feature 1: Zip Code Search** | **Feature 2: Education** |
 | ------------- | ------------- | ------------- |
 | Requirement Specification | Users will enter a 5-digit zip code within the king county range. | Users will access the Education page to learn about King County Water quality issues and facts. |
-| Testing Cases  | Valid zip code: Enter zip code to the search bar that is within the King County range 
-Invalid zip code: Enter zip code that is outside of King County | Users will discover a page to test how they can obtain further information from the 6 topics being listed.
-
-Users will then click on the link they found to move to an external website.|
-| Expected Results  |   |   |
-| Expected Deficiency  |   |   |
-| Unexpected Results  |   |   |
+| Testing Cases  | **Valid zip code:** Enter zip code to the search bar that is within the King County range **Invalid zip code:** Enter zip code that is outside of King County | Users will discover a page to test how they can obtain further information from the 6 topics being listed. Users will then click on the link they found to move to an external website.|
+| Expected Results  | **Valid Zip code:** website renders only the locations that fall into that area **Invalid Zip code:** renders an appropriate error message | Users will hover over the card to see the information flip. Users will find the link after the card flips and moves to the next website.|
+| Expected Deficiency  | The search results may take time to process the location even if the valid zip code was entered. | Even if the user hover over the card, the item does not flip. The “click me” link does not allow users to move to the external website. |
+| Unexpected Results  | The user enters an in-area code and then the page either fails to render anything, does not filter out any locations, or shows locations that are not in that zip code. | The user clicks the button but does not move to the external website. |
 
 **Start Local Host:**
 In order to run the application, start by installing npm packages to rurn. 
