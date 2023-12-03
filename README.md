@@ -13,7 +13,7 @@ This project focuses on Goal 6 from the UN SDGS: Clean Water and Sanitation. Thi
 
 
 ## Problem Statement
-How might we educate the people of King County on water and sanitization supplies/facilities to ensure they can locate necessary resources and opportunities to donate?
+How might we educate the people of King County on water facilities to ensure they can locate necessary sanitation resources and opportunities to donate?
 
 
 ## Features (functional requirements)
