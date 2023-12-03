@@ -26,11 +26,10 @@ export default function Onboarding(props) {
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/LCKsU4bPFOQ?si=xWd3xcz-l96bG57P" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                             </div>
                         </div>
-                        <h2 className="button-link-header-onboarding">What to get on board? Are you a...</h2>
+                        <h2 className="button-link-header-onboarding">What to get on board?</h2>
                         <div className="button-links-onboarding">
                             <div className="d-flex flex-row w-25" id="aquanaut-links">
-                                <Link to='/home' className="btn btn-info btn-lg mb-5 nav-link" id="new-aquanaut">New Aquanaut</Link>
-                                <Link to='/home' className="btn btn-info btn-lg mb-5 nav-link" id="exist-aquanaut">Existing Aquanaut</Link>
+                                <Link to='/home' className="btn btn-info btn-lg mb-5 nav-link" id="new-aquanaut">Take me there!</Link>
                             </div>
                         </div>
                     </div>

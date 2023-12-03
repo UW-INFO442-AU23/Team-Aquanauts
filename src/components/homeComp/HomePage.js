@@ -13,9 +13,9 @@ export default function HomePage(props) {
         <h2 className="sub-header">What kind of Aquanaut are you?</h2>
         <div className="button-links">
           <div className="d-flex flex-column w-25 mx-auto">
-            <Link to='/resources' className="btn btn-info btn-lg mb-5 mt-5 nav-link">Resource page</Link>
-            <Link to='/donations' className="btn btn-info btn-lg mb-5 nav-link">Donation page</Link>
-            <Link to='/education' className="btn btn-info btn-lg mb-5 nav-link">Education page</Link>
+            <Link id="homepage-button" to='/resources' className="btn btn-info btn-lg mb-5 mt-5 nav-link">Resource page</Link>
+            <Link id="homepage-button" to='/donations' className="btn btn-info btn-lg mb-5 nav-link">Donation page</Link>
+            <Link id="homepage-button" to='/education' className="btn btn-info btn-lg mb-5 nav-link">Education page</Link>
           </div>
         </div>
       </main>

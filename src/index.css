@@ -80,6 +80,11 @@
     background-color: rgba(213, 242, 244);
 }
 
+#homepage-button {
+    font-size: 20px;
+}
+
+
 #apply-search {
     background-color: rgba(29, 118, 123);
     color: rgba(231, 242, 253);
