@@ -29,6 +29,7 @@ export default function ResourceCardDetails(props) {
     let zipCode = "";
     let locType = "";
     let basin = "";
+    let gwma = ""; 
     let basinImg = "";
 
     resourcesContent.map((item) => {
@@ -39,6 +40,7 @@ export default function ResourceCardDetails(props) {
             zipCode = item.ZIPCODE;
             locType = item.LOC_TYPE;
             basin = item.BASIN_NAME;
+            gwma = item.GWMA;
             basinImg = BASIN_IMG[item.GWMA];
         }
     })
@@ -66,6 +68,7 @@ export default function ResourceCardDetails(props) {
                         <p>Type of Basin: {basin}</p>
                         <p>Location Zip Code: {zipCode}</p>
                         <p>Type of Resource: {locType}</p>
+                        <p>Ground Water Management Area: {gwma}</p>
                     </div>
                 </div>
                 <div className="google-maps-button">
