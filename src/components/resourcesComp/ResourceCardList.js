@@ -17,7 +17,7 @@ export function ResourceCardList(props) {
                         <h2 className='card-type'>Type: {props.field3}</h2>
                     </div>
                     <div className="card-image-box">
-                        <img src={props.img} alt="test image" className="card-image" />
+                        <img src={props.img} alt="image of the location of the water resource" className="card-image" />
                     </div>
                 </div>
             </Link>
