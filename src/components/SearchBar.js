@@ -27,6 +27,18 @@ export default function SearchBar(props) {
     checkLengthAndFormat(queryString);
   }
 
+  const handleClear = (event) => {
+    setQuery('');
+    setErrorBool(false);
+    setErrorMessage('');
+    props.setMin(0);
+    props.setMax(25);
+    props.setZipcode('');
+    if (ref2.current) {
+      ref2.current.focus();
+    }
+  }
+
   // checks that query is correct length and formatted correctly
   function checkLengthAndFormat(queryString) {
     // checking if query is five or ten characters long
@@ -102,8 +114,9 @@ export default function SearchBar(props) {
   return (
     <div>
       <input className="text-specificity" id="text-input" placeholder="Enter a zipcode" value={query} type="search" onChange={handleChange} />
-      <div className="btn btn-primary" id="apply-search" ref={ref2} onClick={handleSearch}>search!</div>
-      <DisplayError />
+      <div className="btn btn-primary" id="apply-search" ref={ref2} onClick={handleSearch}>Search!</div>
+      <div className="btn btn-primary" id="clear-search" onClick={handleClear}>Clear</div>
+      <div className="display-error"><DisplayError /></div>
     </div>
   )
 }

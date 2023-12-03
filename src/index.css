@@ -132,15 +132,17 @@
     transition: top ease 0.5s, background-color ease 0.5s;
 }
 
-.single-card-box:hover {
+.single-card-box:hover, .single-card-box-donations:hover {
     top: -10px;
     background-color: #74C7CC;
+    border: 5px solid #42959B;
 }
 
 .card-link {
     color: #ECF9F9 !important;
 }
 
+/* resource card list */
 .card-title {
     width: 450px;
     height: 41px;
@@ -154,22 +156,17 @@
     font-size: 30px;
 }
 
+.card-city, .card-zipcode, .card-basin-name, .card-type {
+    width: 450px;
+    height: 41px;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+
 .card-city {
-    width: 450px;
-    height: 41px;
-    font-size: 30px;
-}
-
-.card-zipcode {
-    width: 450px;
-    height: 41px;
-    font-size: 30px;
-}
-
-.card-basin-name {
-    width: 450px;
-    height: 41px;
-    font-size: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .card-image-box {
@@ -183,6 +180,39 @@
     height: 150px;
     border-radius: 5px;
 }
+
+/* donation card list */
+.single-card-box-donations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    position: relative;
+    width: 500px;
+    height: 452.89px;
+    border-radius: 10px;
+    background-color: #66AEB2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    top: 0;
+    transition: top ease 0.5s, background-color ease 0.5s;
+}
+
+.card-name {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    padding: 0px 30px;
+    padding-bottom: 20px;
+}
+
+.card-focus, .card-approach {
+    padding: 0px 50px;
+    width: 500px;
+}
+
+
+
+
 
 /* Onboarding.js */
 .background-onboarding {
@@ -528,11 +558,10 @@
 
 
 
-
 /*
 Education page flip cards and stylings
 */
-.card-flip > div {
+.card-flip>div {
     backface-visibility: hidden;
     transition: transform 150ms;
     transition-timing-function: linear;
@@ -540,35 +569,55 @@ Education page flip cards and stylings
     height: 100%;
     margin: 0;
     display: flex;
-  }
+}
 
-  .card-front {
+.card-front {
     transform: rotateY(0deg);
-  }
+}
 
-  .card-back {
+.card-back {
     transform: rotateY(180deg);
     position: absolute;
     top: 0;
-  }
+}
 
-  .card-front, .card-back{
+.card-front, .card-back {
     background-color: #024343;
-  }
+}
 
-  .card-flip:hover .card-front {
+.card-flip:hover .card-front {
     transform: rotateY(-180deg);
-  }
+}
 
-  .card-flip:hover .card-back {
+.card-flip:hover .card-back {
     transform: rotateY(0deg);
-  }
+}
 
-  .ed-intro-text, .ed-intro-heading{
+.ed-intro-text, .ed-intro-heading {
     text-align: center;
     color: #024343;
     font-weight: 400;
     font-size: 25px;
     line-height: 90px;
     text-align: center
-  }
+}
+
+/* search bar */
+#apply-search {
+    margin: 0 20px;
+    width: 100px;
+    background-color: #1D767B;
+    border-style: none;
+}
+
+#clear-search {
+    width: 100px;
+    background-color: #81CDD1;
+    color: #024343;
+    border-style: none;
+}
+
+.display-error {
+    padding-top: 10px;
+    color: #024343;
+}

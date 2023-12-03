@@ -18,13 +18,12 @@ export default function DonationPage(props) {
       .length;
   }
 
-  function cardMethod(name, statement, focus, website, key) {
+  function cardMethod(name, focus, approach, key) {
     return (
       <DonationCardList
         title={name}
-        field1={statement}
-        field2={focus}
-        field3={website}
+        field1={focus}
+        field2={approach}
         key={key}
       />
     );
@@ -38,19 +37,19 @@ export default function DonationPage(props) {
     }
 
     if (focus === '' && beneficiaries === '') { //default
-      return cardMethod(item.Name, item.Focus, item.Beneficiary, statement, item.Name);
+      return cardMethod(item.Name, item.Focus, item.Approach, item.Name);
     } else { //not default
       if (focus !== '' && beneficiaries !== '') { //filter by both
         if (item.Focus === focus && item.Beneficiary === beneficiaries) {
-          return cardMethod(item.Name, item.Focus, item.Beneficiary, statement, item.Name);
+          return cardMethod(item.Name, item.Focus, item.Approach, item.Name);
         }
       } else if (focus === '') { //filter beneficiaries only
         if (item.Beneficiary === beneficiaries) {
-          return cardMethod(item.Name, item.Focus, item.Beneficiary, statement, item.Name);
+          return cardMethod(item.Name, item.Focus, item.Approach, item.Name);
         }
       } else { //filter focuses only
         if (item.Focus === focus) {
-          return cardMethod(item.Name, item.Focus, item.Beneficiary, statement, item.Name);
+          return cardMethod(item.Name, item.Focus, item.Approach, item.Name);
         }
       }
     }

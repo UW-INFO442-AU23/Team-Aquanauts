@@ -44,9 +44,9 @@ const DonationCardDetails = (props) => {
                 <h1 className="name-of-location">{name}</h1>
             </div>
             <div className="details-text">
-                <p> <span class="bolded"> Focus Area:</span> {focus}</p>
-                <p> <span class="bolded"> Mission Statement:</span> {statement}</p>
-                <p> <span class="bolded"> Beneficiary:</span> {beneficiary}</p>
+                <p> <span className="bolded"> Focus Area:</span> {focus}</p>
+                <p> <span className="bolded"> Mission Statement:</span> {statement}</p>
+                <p> <span className="bolded"> Beneficiary:</span> {beneficiary}</p>
             </div>
             <div className="fav-button">
             <a href={website}>
