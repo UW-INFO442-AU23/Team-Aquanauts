@@ -36,6 +36,15 @@ P2 - Nice to have
 - Favorited places/saved places
 - Education page (stats within King County, link to other outside sources)
 
+|               | **Feature 1: Zip Code Search** | **Feature 2: Education** |
+| ------------- | ------------- | ------------- |
+| Requirement Specification | Users will enter a 5-digit zip code within the king county range. | Users will access the Education page to learn about King County Water quality issues and facts. |
+| Testing Cases  | Valid zip code: Enter zip code to the search bar that is within the King County range Invalid zip code: Enter zip code that is outside of King County | Users will discover a page to test how they can obtain further information from the 6 topics being listed.
+
+Users will then click on the link they found to move to an external website.|
+| Expected Results  |   |   |
+| Expected Deficiency  |   |   |
+| Unexpected Results  |   |   |
 
 **Start Local Host:**
 In order to run the application, start by installing npm packages to rurn. 
