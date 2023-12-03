@@ -1,6 +1,6 @@
-**Website name:** The AquaPod
+<h1 align="center"> The AquaPod </h1>
 
-**Group name:** Aquanauts
+<h2 align="center"> Group 5: Aquanauts </h2>
 
 **Members:** Taiga, Emily, Cindy, Jianna, Joseph
 
@@ -35,6 +35,9 @@ P2 - Nice to have
 - Places that provide free sanitation/hygiene products
 - Favorited places/saved places
 - Education page (stats within King County, link to other outside sources)
+
+**Testing Protocols**
+
 
 |               | **Feature 1: Zip Code Search** | **Feature 2: Education** |
 | ------------- | ------------- | ------------- |
