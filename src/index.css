@@ -211,6 +211,52 @@
     width: 500px;
 }
 
+/* donation drop search */
+.dropdown-title {
+    font-size: 25px;
+    color: #024343;
+    margin-left: 100px;
+}
+
+.donation-dropdown-menus {
+    display: flex;
+    flex-direction: row;
+}
+
+.donation-dropdowns {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    padding: 10px;
+}
+
+#dropdownMenuButton {
+    width: 300px;
+    background-color: #1D767B;
+}
+
+#dropdownMenuButton:focus {
+    background-color: white;
+    color: #024343;
+}
+
+.dropdown-clear {
+    padding-right: 30px;
+}
+
+.donation-dropdown-menus {
+    margin-left: 90px;
+}
+
+#clear-drowndown {
+    width: 100px;
+    background-color: #81CDD1;
+    color: #024343;
+    border-style: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
 
 
 

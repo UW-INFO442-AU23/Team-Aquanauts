@@ -88,9 +88,14 @@ export default function DonationPage(props) {
         <h1>Donation Page</h1>
       </header>
       <main>
-        <DropSearch setFocus={setFocus} type='focuses' setMin={setMinIndex} setMax={setMaxIndex} />
-        <DropSearch setBeneficiaries={setBeneficiaries} type='beneficiaries' setMin={setMinIndex} setMax={setMaxIndex} />
-
+        <div className="dropdown-title">
+            <p>Filter donations!</p>
+        </div>
+        <div className="donation-dropdown-menus">
+          <DropSearch setFocus={setFocus} type='focuses' setMin={setMinIndex} setMax={setMaxIndex} />
+          <DropSearch setBeneficiaries={setBeneficiaries} type='beneficiaries' setMin={setMinIndex} setMax={setMaxIndex} />
+        </div>
+        
         <div className="card-list">
           {updatedCards.slice(minIndex, maxIndex)}
         </div>

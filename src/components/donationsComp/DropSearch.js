@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 const focuses = ['Wastewater', 'Water Quality', 'Water Access', 'Affordability', 'Infrastructure', 'Law & Policy', 'Technology Adv', 'Hygiene', 'Public Health'];
 const beneficiaries = ['Households', 'Implementing Organizations', 'Impacted Communities', 'Local & State Government', 'Unhoused Communities', 'Environment', 'Utilities', 'Schools', 'General Public', 'Federal Government', ''];
 
 export default function DropSearch(props) {
+  const [selectedValue, setSelectedValue] = useState('');
+  
   let filterMessage = '';
   if (props.type === "focuses") {
     filterMessage = 'Filter by Focus';
@@ -18,6 +20,8 @@ export default function DropSearch(props) {
     } else {
       props.setBeneficiaries(event.target.textContent);
     }
+
+    setSelectedValue(event.target.textContent);
   }
 
   let options = [];
@@ -35,14 +39,33 @@ export default function DropSearch(props) {
     })
   }
 
+  const handleClear = (event) => {
+    setSelectedValue('');
+    props.setMin(0);
+    props.setMax(25);
+
+    if (props.type === "focuses") {
+      props.setFocus('');
+    } else {
+      props.setBeneficiaries('');
+    }
+  }
+
+
   return (
-    <div className="dropdown">
-      <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-        {filterMessage}
-      </button>
-      <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        {options}
-      </ul>
+    <div className="donation-dropdowns">
+      <div className="dropdown">
+        <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+          {selectedValue || filterMessage}
+        </button>
+        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          {options}
+        </ul>
+      </div>
+      <div className="dropdown-clear">
+        <div className="btn btn-primary" id="clear-drowndown" onClick={handleClear}>Clear</div>
+      </div>
     </div>
+
   )
 }
