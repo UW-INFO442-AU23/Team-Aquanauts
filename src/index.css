@@ -530,7 +530,7 @@
 
 
 /*
-flip card
+Education page flip cards and stylings
 */
 .card-flip > div {
     backface-visibility: hidden;
@@ -558,4 +558,13 @@ flip card
 
   .card-flip:hover .card-back {
     transform: rotateY(0deg);
+  }
+
+  .ed-intro-text, .ed-intro-heading{
+    text-align: center;
+    color: #024343;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 90px;
+    text-align: center
   }

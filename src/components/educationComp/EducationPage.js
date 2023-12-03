@@ -16,8 +16,13 @@ export default function EducationPage(props) {
 
         <div className='flex-container'>
           <div className='education-intro'>
-            <h1 className='ed-intro-text'>Welcome to the Education Page of the Aquapod!</h1>
-            <p></p>
+            <h2 className='ed-intro-heading'>Welcome to the Education Page of the Aquapod!</h2>
+            <p ed-intro-text>
+              The Aquapod's education page provides user with common information and issues with the water in the King County area.
+              To learn more about specific topics hover over the cards on your personal computer or tap/click on a mobile device to view 
+              key information located on the flip side of each card. Lastly, each information card has a button on the back that links to 
+              external sites where even more information can be found. Happy learning Aquanauts!
+            </p>
           </div>
         </div>
 
@@ -27,9 +32,9 @@ export default function EducationPage(props) {
                 <div className="card-front text-white bg-dark">
                   <div className="card-body">
                     <img src="https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/harbor-activity.jpg?raw=true" className="card-img-top" 
-                      alt="This is an image of the Seattle Waterfront that sits on Elliot Bay. Several boats and the Great Wheel of Seattle are set in the background"/>
+                      alt="Seattle Waterfront that sits on Elliot Bay. Several boats and the Great Wheel of Seattle are set in the background"/>
                     <h3 className="flip-card-title">King County Water</h3>
-                    <p className="flip-card-text">Hover to learn more about where King County gets water!</p>
+                    <p className="flip-card-text">Hover or tap to learn more about where King County gets water!</p>
                   </div>
                 </div>
                 <div className="card-back bg-dark text-white">
@@ -51,9 +56,9 @@ export default function EducationPage(props) {
                 <div className="card-front text-white bg-dark">
                   <div className="card-body">
                     <img src="https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/water-lisa-fotio.jpg?raw=true" className="card-img-top" 
-                      alt="This is an image of a close up of a person's hand set against a white background, where their hand is holding a nearly full glass of water" />
+                      alt="Close up of a person's hand set against a white background, where their hand is holding a nearly full glass of water" />
                     <h3 className="flip-card-title">Water Quality Issues</h3>
-                    <p className="flip-card-text">Hover to learn more about common water quality problems in King County</p>
+                    <p className="flip-card-text">Hover or tap to learn more about common water quality problems in King County</p>
                   </div>
                 </div>
                 <div className="card-back bg-dark text-white">
@@ -74,9 +79,9 @@ export default function EducationPage(props) {
                 <div className="card-front text-white bg-dark">
                   <div className="card-body">
                     <img src="https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/water-burst.jpg?raw=true" className="card-img-top" 
-                      alt="This is an image of a younger child washing their hands in a sink with soapy bubbles on their hands." />
+                      alt="A younger child washing their hands in a sink with soapy bubbles on their hands." />
                     <h3 className="flip-card-title">King County Sanitation</h3>
-                    <p className="flip-card-text">Hover to learn more about water sanitation in King County</p>
+                    <p className="flip-card-text">Hover or tap to learn more about water sanitation in King County</p>
                   </div>
                 </div>
                 <div className="card-back bg-dark text-white">
@@ -97,9 +102,9 @@ export default function EducationPage(props) {
                 <div className="card-front text-white bg-dark">
                   <div className="card-body">
                     <img src="https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/pgs-brandie-robbins.jpg?raw=true" className="card-img-top" 
-                      alt="This is an image of Puget Sound with the Seattle Waterfront and Space Needle set in the background overlooking the water." />
+                      alt="Puget Sound with the Seattle Waterfront and Space Needle set in the background overlooking the water." />
                     <h3 className="flip-card-title">Public Facilities</h3>
-                    <p className="flip-card-text">Hover to learn more about King County's public water facilites</p>
+                    <p className="flip-card-text">Hover or tap to learn more about King County's public water facilites</p>
                   </div>
                 </div>
                 <div className="card-back bg-dark text-white">
@@ -121,9 +126,9 @@ export default function EducationPage(props) {
                 <div className="card-front text-white bg-dark">
                   <div className="card-body">
                     <img src="https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/elliot-bay-maximilian-ruther.jpg?raw=true" className="card-img-top" 
-                      alt="This is an image of Elliot Bay in Seattle, Washington with the shipping docks set in the forefront of the picture." />
+                      alt="Elliot Bay in Seattle, Washington with the shipping docks set in the forefront of the picture." />
                     <h3 className="flip-card-title">Clean Conservation</h3>
-                    <p className="flip-card-text">Hover over to learn about how to conserve clean water!</p>
+                    <p className="flip-card-text">Hover or tap to learn about how to conserve clean water!</p>
                   </div>
                 </div>
                 <div className="card-back bg-dark text-white">
@@ -144,9 +149,9 @@ export default function EducationPage(props) {
                 <div className="card-front text-white bg-dark">
                   <div className="card-body">
                     <img src="https://github.com/UW-INFO442-AU23/aquanauts/blob/main/img/lakeunion-roman-pohorecki.jpg?raw=true" className="card-img-top" 
-                      alt="This is an image of Lake Union in the city of Seattle during sunset." />
+                      alt="Lake Union in the city of Seattle during sunset." />
                     <h3 className="flip-card-title">Water Usage</h3>
-                    <p className="flip-card-text">Hover to learn more about how water usage impacts King County.</p>
+                    <p className="flip-card-text">Hover or tap to learn more about how water usage impacts King County.</p>
                   </div>
                 </div>
                 <div className="card-back bg-dark text-white">
