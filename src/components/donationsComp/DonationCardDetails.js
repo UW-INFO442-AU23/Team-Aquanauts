@@ -35,24 +35,28 @@ const DonationCardDetails = (props) => {
 
 
     return (
-        <div className="details-container">
+        <div className="details-page">
             <NavBar />
-            <div className="location-back-button">
-                <button className="back-button"><NavLink to="/donations">Back</NavLink></button>
+            <div className="details-container">
+                <div className="donation-back-button">
+                    <button className="back-button"><NavLink to="/donations"  className="navlink-back">Back</NavLink></button>
+                </div>
+                <div className="location-name-text">
+                    <h1 className="name-of-location">{name}</h1>
+                </div>
+                <div className="details-donation-info">
+                    <div className="details-text-donations">
+                        <p> <span className="bolded">Focus Area:</span> {focus}</p>
+                        <p> <span className="bolded">Mission Statement:</span> {statement}</p>
+                        <p> <span className="bolded">Beneficiary:</span> {beneficiary}</p>
+                    </div>
+                </div>
+                <div className="donate-button">
+                    <button className="donate-now-button" onClick={handleDonateNowClick}> Check Website & Donate Now!</button>
+                    <p className="donate-redirect">(This will redirect you to an external site)</p>
+                </div>
             </div>
-            <div className="location-name-text">
-                <h1 className="name-of-location">{name}</h1>
-            </div>
-            <div className="details-text">
-                <p> <span className="bolded"> Focus Area:</span> {focus}</p>
-                <p> <span className="bolded"> Mission Statement:</span> {statement}</p>
-                <p> <span className="bolded"> Beneficiary:</span> {beneficiary}</p>
-            </div>
-            <div className="fav-button">
-            <a href={website}>
-                <button className="fav-location-button" onClick={handleDonateNowClick}> Check Website & Donate Now!</button>
-            </a>
-            </div>
+            
         </div>
     )
 }

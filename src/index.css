@@ -97,6 +97,7 @@
 
 .search-title {
     font-size: 25px;
+    color: #024343;
 }
 
 
@@ -135,7 +136,7 @@
 .single-card-box:hover, .single-card-box-donations:hover {
     top: -10px;
     background-color: #74C7CC;
-    border: 5px solid #42959B;
+    border: 3px solid #42959B;
 }
 
 .card-link {
@@ -428,7 +429,7 @@
 .details-page {
     background-image: linear-gradient(to bottom right, rgba(194, 237, 239), rgba(238, 249, 250));
     height: 100%;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 .details-container {
@@ -437,7 +438,7 @@
     position: relative;
 }
 
-.location-back-button {
+.location-back-button, .donation-back-button {
     display: flex;
     text-align: center;
     margin-left: 66px;
@@ -494,6 +495,7 @@
     flex-direction: column;
     color: #024343;
     margin-left: 40px;
+    margin-right: 40px;
     margin-top: 60px;
     font-size: 30px;
 }
@@ -525,7 +527,6 @@
 .google-maps-button {
     margin-left: 184px;
     margin-top: 20px;
-    
 }
 
 #details-button {
@@ -543,16 +544,38 @@
     padding-left: 11px;
 }
 
+/* donation details */
+.details-text-donations {
+    flex-direction: column;
+    color: #024343;
+    margin-left: 135px;
+    margin-right: 70px;
+    margin-top: 60px;
+    font-size: 30px;
+}
 
-.fav-location-button {
+.donate-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.donate-now-button {
     position: relative;
     width: 291px;
     height: 52px;
-    left: 184px;
-    top: 100px;
     color: #ECF9F9;
     background-color: #1D767B;
     border-radius: 10px;
+}
+
+.donate-redirect {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    color: #024343;
 }
 
 
@@ -608,6 +631,7 @@ Education page flip cards and stylings
     width: 100px;
     background-color: #1D767B;
     border-style: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 #clear-search {
@@ -615,6 +639,7 @@ Education page flip cards and stylings
     background-color: #81CDD1;
     color: #024343;
     border-style: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .display-error {
