@@ -1,12 +1,15 @@
 import React, { Component, useEffect } from 'react';
 
-function SplashMessage() {
+const SplashMessage = () => {
     return (
-        <div className="splash-background">
-            <h2 className="welcome-to">Welcome to</h2>
-            <h2 className="the-header">the</h2>
-            <h1 className="aquapod-header">AquaPod</h1>
+        <div className="splash">
+            <div className="splash-background">
+                <h2 className="welcome-to">Welcome to</h2>
+                <h2 className="the-header">the</h2>
+                <h1 className="aquapod-header">AquaPod</h1>
+            </div>
         </div>
+        
     )
     
 }
@@ -50,4 +53,4 @@ export default function withSplashScreen(WrappedComponent) {
             }
         }
     }
-} 
+}

@@ -557,7 +557,17 @@
     flex-wrap: wrap;
 }
 
+.details-image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 550px;
+    height: 377px;
+}
+
 .details-image-box {
+    position: relative;
     align-items: center;
     justify-content: space-between;
     width: 407px;
@@ -566,12 +576,23 @@
     margin-top: 15px;
     overflow: auto;
     overflow-wrap: anywhere;
+    z-index: 1;
 }
 
 .details-image {
     width: 391px;
     height: 359px;
-    z-index: 1;
+    border-radius: 10px;
+}
+
+.details-image-backbox {
+    position: absolute;
+    left: 118px;
+    top: 30px;
+    width: 381px;
+    height: 353px;
+    z-index: 0;
+    background-color: #66AEB2;
     border-radius: 10px;
 }
 
@@ -589,28 +610,9 @@
     color: black;
 }
 
-/* need to implement back */
-.details-image-backbox {
-    position: relative;
-    width: 381px;
-    height: 353px;
-    left: 118px;
-    top: 80px;
-    z-index: 0;
-    background-color: #66AEB2;
-    border-radius: 10px;
-}
-
-.details-image-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
 .google-maps-button {
     margin-left: 184px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 #details-button {

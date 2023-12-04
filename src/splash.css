@@ -1,3 +1,12 @@
+.splash {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* Adjust the duration and timing function as needed */
+  }
+  
+  .splash.fade-out {
+    opacity: 0;
+  }
+  
 .splash-background {
     background-image: linear-gradient(to bottom right, rgba(131, 210, 215), rgba(237, 253, 245));
     height: 100vh;

@@ -61,8 +61,11 @@ export default function ResourceCardDetails(props) {
                     <h1 className="name-of-location">{locationName}</h1>
                 </div>
                 <div className="details-info">
-                    <div className="details-image-box">
-                        <img src={basinImg} alt="map of city that resource is located in" className="details-image" />
+                    <div className="details-image-container">
+                        <div className="details-image-backbox"></div>
+                        <div className="details-image-box">
+                            <img src={basinImg} alt="map of city that resource is located in" className="details-image" />
+                        </div>
                     </div>
                     <div className="details-text">
                         <p className="basin-text"> <span className="bolded"> Type of Basin:</span> {basin}</p>
