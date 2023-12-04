@@ -13,6 +13,7 @@
 .background-page {
     background-image: linear-gradient(to bottom right, rgba(194, 237, 239), rgba(238, 249, 250));
     height: 100%;
+    min-height: 8350px;
 }
 
 .background-onboard {
@@ -84,12 +85,6 @@
     font-size: 20px;
 }
 
-
-#apply-search {
-    background-color: rgba(29, 118, 123);
-    color: rgba(231, 242, 253);
-}
-
 .page-title {
     text-align: center;
     padding-top: 40px;
@@ -112,6 +107,32 @@
 .search-title {
     font-size: 25px;
     color: #024343;
+}
+
+.card-cycle {
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.displaying-cards {
+    color: #024343;
+}
+
+#previous-button, #next-button {
+    width: 150px;
+    background-color: #1D767B;
+    border-style: none;
+    color: rgba(231, 242, 253);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+#previous-button {
+    margin-right: 20px;
+}
+
+#previous-button:hover, #next-button:hover {
+    color: rgba(17, 124, 131);
+    background-color: white;
 }
 
 
@@ -272,6 +293,9 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
+#clear-drowndown:hover {
+    background-color: white;
+}
 
 
 
@@ -414,7 +438,7 @@
 
 #aquanaut-links a:hover {
     color: rgba(17, 124, 131);
-    background-color: rgba(213, 242, 244);
+    background-color: #F0FBFB;
 }
 
 .features-onboarding {
@@ -697,6 +721,12 @@ Education page flip cards and stylings
     background-color: #1D767B;
     border-style: none;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(231, 242, 253);
+}
+
+#apply-search:hover {
+    color: rgba(17, 124, 131);
+    background-color: white;
 }
 
 #clear-search {
@@ -705,6 +735,10 @@ Education page flip cards and stylings
     color: #024343;
     border-style: none;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+#clear-search:hover {
+    background-color: white;
 }
 
 .display-error {
