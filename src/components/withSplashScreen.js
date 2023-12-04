@@ -1,15 +1,13 @@
 import React, { Component, useEffect } from 'react';
 
-const SplashMessage = () => {
+function SplashMessage() {
     return (
-        <div className="splash">
-            <div className="splash-background">
-                <h2 className="welcome-to">Welcome to</h2>
-                <h2 className="the-header">the</h2>
-                <h1 className="aquapod-header">AquaPod</h1>
-            </div>
+        <div className="splash-background">
+            <h2 className="welcome-to">Welcome to</h2>
+            <h2 className="the-header">the</h2>
+            <h1 className="aquapod-header">AquaPod</h1>
         </div>
-        
+
     )
     
 }
@@ -25,32 +23,25 @@ export default function withSplashScreen(WrappedComponent) {
 
         async componentDidMount() {
             // await request
-            try {
-                setTimeout(() => {
-                    this.setState({
-                        loading: false,
-                    });
-                }, 3000)
-            } catch (err) {
-                console.log(err);
+            setTimeout(() => {
                 this.setState({
                     loading: false,
                 });
-            }
+            }, 2000);
         }
 
         render() {
             const { loading } = this.state;
-            // show loading message
-            if (loading) {
-                return (
-                    <SplashMessage />
-                )
-                
-            } else {
-                //otherwise, show desired route ?
-                return <WrappedComponent {...this.props} />;
-            }
+
+            return (
+                <div className={`splash ${loading ? 'fade-out' : ''}`}>
+                    {loading ? (
+                        <SplashMessage />
+                    ) : (
+                        <WrappedComponent {...this.props} />
+                    )}
+                </div>
+            ); 
         }
     }
 }
