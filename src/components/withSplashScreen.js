@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 
 function SplashMessage() {
     return (
@@ -18,30 +18,47 @@ export default function withSplashScreen(WrappedComponent) {
             super(props);
             this.state = {
                 loading: true,
+                fadeOut: false,
             };
+            this.handleAnimationEnd = this.handleAnimationEnd.bind(this);
         }
 
         async componentDidMount() {
+            console.log("rendering timeout")
             // await request
             setTimeout(() => {
                 this.setState({
                     loading: false,
                 });
-            }, 2000);
+            }, 3000);
         }
+
+        handleAnimationEnd(event) {
+            console.log("rendering end")
+            if (!this.animationEndHandled && event.target.classList.contains('splash')) {
+                this.animationEndHandled = true;
+                this.setState({
+                  fadeOut: false,
+                });
+              }
+          }
 
         render() {
-            const { loading } = this.state;
+            const { loading, fadeOut } = this.state;
 
+            console.log("rendering splash")
             return (
-                <div className={`splash ${loading ? 'fade-out' : ''}`}>
-                    {loading ? (
-                        <SplashMessage />
-                    ) : (
-                        <WrappedComponent {...this.props} />
-                    )}
+                <div className={`splash-container ${fadeOut ? 'fade-out' : 'fade-in'}`}>
+                    <SplashMessage />
+                    <div className={`splash ${fadeOut ? 'fade-out' : 'fade-in'}`} onAnimationEnd={this.handleAnimationEnd}>
+                        {!fadeOut && (
+                            <div>
+                                <WrappedComponent {...this.props} />
+                            </div>
+                        )}
+                    </div>
                 </div>
-            ); 
+            );
         }
-    }
+    };
 }
