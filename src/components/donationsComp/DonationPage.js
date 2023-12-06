@@ -13,7 +13,8 @@ export default function DonationPage(props) {
   let total = 0;
 
   function scrollToTop() {
-    window.scrollTo({
+    const splashContainer = document.querySelector('.splash');
+    splashContainer.scrollTo({
       top: 0,
       behavior: 'smooth',
     });

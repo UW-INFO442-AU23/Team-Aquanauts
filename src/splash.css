@@ -10,8 +10,8 @@
     left: 0;
     width: 100%;
     opacity: 1;
-    height: 100vh;
-    overflow-y: auto;
+    height: 100%;
+    overflow: auto;
 }
 
 .splash.fade-out {

@@ -21,7 +21,8 @@ export default function ResourcePage(props) {
   let total = 0;
 
   function scrollToTop() {
-    window.scrollTo({
+    const splashContainer = document.querySelector('.splash');
+    splashContainer.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
@@ -74,6 +75,7 @@ function forward() {
     setMaxIndex(maxIndex + 25);
   }
   if(maxIndex != total) {
+    console.log("Scrolling to top forward");
     scrollToTop();
   }
   
@@ -85,6 +87,7 @@ function backward() {
     setMinIndex(minIndex-25);
   }
   if(minIndex != 0) {
+    console.log("Scrolling to top backwards");
     scrollToTop();
   }
 }
