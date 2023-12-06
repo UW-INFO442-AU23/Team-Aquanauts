@@ -1,5 +1,5 @@
 import NavBar from '../NavBar.js';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useParams } from 'react-router';
 import { charityContent } from '../../data/waterCharities.js';
 
