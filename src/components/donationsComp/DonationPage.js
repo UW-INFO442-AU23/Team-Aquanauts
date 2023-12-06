@@ -100,9 +100,12 @@ export default function DonationPage(props) {
         <div className="card-list">
           {updatedCards.slice(minIndex, maxIndex)}
         </div>
-        <p>displaying cards {minIndex + 1} to {maxIndex} of {updatedCards.length}</p>
-        <button onClick={backward}>Previous 25</button>
-        <button onClick={forward} >Next 25</button>
+        <div className="card-cycle">
+          <p className="displaying-cards">Displaying cards {minIndex + 1} to {maxIndex} of {updatedCards.length}</p>
+          <button className="btn btn-primary" id="previous-button" onClick={backward}>Previous 25</button>
+          <button className="btn btn-primary" id="next-button" onClick={forward} >Next 25</button>
+        </div>
+
       </main>
     </div>
   )
