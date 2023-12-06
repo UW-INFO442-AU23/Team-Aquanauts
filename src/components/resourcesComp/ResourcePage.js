@@ -28,7 +28,7 @@ export default function ResourcePage(props) {
             title={item.CITY}
             field1={item.LOC_NAME}
             field2={item.ZIPCODE}
-            field3={item.LOC_TYPE}
+            field3={item.BASIN_NAME}
             key={temp}
             img={BASIN_IMG[item.GWMA]}
         />
