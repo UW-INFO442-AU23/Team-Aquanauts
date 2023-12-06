@@ -20,6 +20,13 @@ export default function ResourcePage(props) {
   const [maxIndex, setMaxIndex] = useState(25);
   let total = 0;
 
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
+
   const cards = resourcesContent.map(item => {
     temp = temp + 1;
     if (searchZip.length === 0) { //default
@@ -66,12 +73,19 @@ function forward() {
   } else {
     setMaxIndex(maxIndex + 25);
   }
+  if(maxIndex != total) {
+    scrollToTop();
+  }
+  
 }
 
 function backward() {
   if (!((minIndex-25) < 0)) {
     setMaxIndex(minIndex);
     setMinIndex(minIndex-25);
+  }
+  if(minIndex != 0) {
+    scrollToTop();
   }
 }
 
